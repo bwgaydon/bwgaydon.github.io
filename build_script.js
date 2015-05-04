@@ -12,18 +12,35 @@ function main() {
     "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-partings-proxy-stalker-rush",
     "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-3gate-robo",
     "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-traps-3gate-all-in",
-    "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-4gate"
+    "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-4gate",
+    "http://wiki.teamliquid.net/starcraft2/Photon_Cannon_Rush",
+    "http://wiki.teamliquid.net/starcraft2/2_Gate_Zealot_Rush",
+    "http://wiki.teamliquid.net/starcraft2/Proxy_2_Gate:_1_Zealot_2_Stalker_All-in_(vs._Protoss)",
+    "http://wiki.teamliquid.net/starcraft2/The_Great_Book_Of_Protoss_Bullshit#10-gate.2F3-gate_.E2.80.93_PvP",
+    "http://wiki.teamliquid.net/starcraft2/Dear%27s_DT/Immortal_Drop",
+    "http://wiki.teamliquid.net/starcraft2/HotS_2-Gate_Fast_Expand_(vs._Protoss)",
+    "http://wiki.teamliquid.net/starcraft2/Power_Overwhelming:_Immortal/Archon/Chargelot_(vs._Protoss)"
     ];
   
+  $('#tvt').click(function() {
+    window.location = tvt[random_page(tvt)];
+  });
+  $('#tvz').click(function() {
+    window.location = tvz[random_page(tvz)];
+  });
+  $('tvp').click(function() {
+    window.location = tvp[random_page()]
+  })
+  
   $('#pvp').click(function() {
-    window.location = pvp[random_page(pvp)];
+    window.location = random_page(pvp);
   });
     
 }
 
 function random_page(array) {
   index = Math.floor(Math.random() * array.length);
-  return index;
+  return array[index];
 }
 
 $(document).ready(main);
