@@ -16,7 +16,7 @@ function main() {
     ];
   
   $('#pvp').click(function() {
-    window.location = pvp[Math.floor(Math.random()*pvp.length)];
+    window.location = pvp[random_page(pvp)];
   });
     
 }
