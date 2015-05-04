@@ -21,7 +21,7 @@ function main() {
 
 function pvp_random() {
   //$("#pvp").attr("href", pvp[random_page(pvp)]);
-  window.alert(Math.random());
+  window.alert(Math.random()*pvp.length);
 }
 
 function random_page(array) {
