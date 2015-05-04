@@ -20,7 +20,8 @@ function main() {
 }
 
 function pvp_random() {
-  $("#pvp").attr("href", pvp[random_page(pvp)]);
+  //$("#pvp").attr("href", pvp[random_page(pvp)]);
+  window.alert(pvp[random_page(pvp)]);
 }
 
 function random_page(array) {
