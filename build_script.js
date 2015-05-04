@@ -23,24 +23,38 @@ function main() {
     ];
   
   $('#tvt').click(function() {
-    window.location = tvt[random_page(tvt)];
+    window.location = random_page(tvt);
   });
   $('#tvz').click(function() {
-    window.location = tvz[random_page(tvz)];
+    window.location = random_page(tvz);
   });
-  $('tvp').click(function() {
-    window.location = tvp[random_page()]
-  })
-  
+  $('#tvp').click(function() {
+    window.location = random_page(tvp);
+  });
+  $('#zvt').click(function() {
+    window.location = random_page(zvt);
+  });
+  $('#zvz').click(function() {
+    window.location = random_page(zvz);
+  });
+  $('#zvp').click(function() {
+    window.location = random_page(zvp);
+  });
+  $('#pvt').click(function() {
+    window.location = random_page(pvt)
+  });
+  $('#pvz').click(function() {
+    window.location = random_page(pvz)
+  });
   $('#pvp').click(function() {
-    window.location = random_page(pvp);
+    random_page(pvp);
   });
     
 }
 
 function random_page(array) {
   index = Math.floor(Math.random() * array.length);
-  return array[index];
+  window.location = array[index];
 }
 
 $(document).ready(main);
