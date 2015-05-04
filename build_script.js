@@ -15,13 +15,10 @@ function main() {
     "http://imbabuilds.com/hots-protoss/hots-pvp/pvp-4gate"
     ];
   
-  $('#pvp').click(pvp_random);
+  $('#pvp').click(function() {
+    window.alert(Math.random()*pvp.length);
+  });
     
-}
-
-function pvp_random() {
-  //$("#pvp").attr("href", pvp[random_page(pvp)]);
-  window.alert(Math.random()*pvp.length);
 }
 
 function random_page(array) {
