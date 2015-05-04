@@ -85,7 +85,8 @@ function main() {
     "http://wiki.teamliquid.net/starcraft2/DRG_10_Roach_Pressure_(vs_T)",
     "http://wiki.teamliquid.net/starcraft2/HyuN%27s_Roach/Hydra_(vs.Terran)",
     "http://wiki.teamliquid.net/starcraft2/Infestor/Corruptor/Brood_Lord_(vs._Terran)",
-    "http://wiki.teamliquid.net/starcraft2/Leenock_Double_Spire_(vs._Terran)"
+    "http://wiki.teamliquid.net/starcraft2/Leenock_Double_Spire_(vs._Terran)",
+    "http://www.teamliquid.net/forum/sc2-strategy/416986-the-triple-barrel-bust-zerg-vs-terran"
   ];
   var zvz = [
     "http://imbabuilds.com/hots-zerg/hots-zvz/zvz-standard-lingbane-opener/",
