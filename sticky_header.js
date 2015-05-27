@@ -1,6 +1,6 @@
 var headers = document.getElementsByClassName('header');
 for(i=0;i<headers.length;i++) {
-    headers[i].style.zIndex = i;
+    headers[i].style.zIndex = i+1;
 }
 /*
 $(window).scroll(function () {
