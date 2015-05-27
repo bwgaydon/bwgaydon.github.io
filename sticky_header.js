@@ -2,7 +2,7 @@ var headers = document.getElementsByClassName('header');
 for(i=0;i<headers.length;i++) {
     headers[i].style.zIndex = i;
 }
-
+/*
 $(window).scroll(function () {
     if( $(window).scrollTop() > $('#header').offset().top && !($('#header').hasClass('sticky'))) {
         $('#header').addClass('sticky');
@@ -11,6 +11,18 @@ $(window).scroll(function () {
         $('#header').removeClass('sticky');
     }
 });
+*/
+
+$(window).scroll(function () {
+    var header = headers[0];
+    if( $(window).scrollTop() > $(header).offset().top && !($(header).hasClass('sticky'))) {
+        $(header).addClass('sticky');
+    }
+    else if ($(window).scrollTop() == 0){
+        $(header).removeClass('sticky');
+    }
+});
+
 /*
 var i=0;
 $(window).scroll(function () {
