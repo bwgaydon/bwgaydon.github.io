@@ -3,8 +3,8 @@ var headers = document.getElementsByClassName('header');
 var original_positions = [];
 for(i=0;i<headers.length;i++) {
     original_positions[i] = headers[i].offsetTop;
+    console.log(original_positions[i]);
 }
-console.log(original_positions);
 var running = false;
 //body.style.zIndex = 1;
 
