@@ -17,6 +17,7 @@ $(window).scroll(function () {
 
 function stick(div) {
     div.style.top = div.offsetTop;
+    console.log(div.style.top);
 }
 
 
