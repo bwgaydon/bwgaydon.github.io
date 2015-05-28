@@ -3,9 +3,8 @@ var headers = document.getElementsByClassName('header');
 for(i=0;i<headers.length;i++) {
     headers[i].style.zIndex = i+100;
 }
-
+/*
 $(window).scroll(function () {
-    debugger;
     var header = headers[0];
     if( $(window).scrollTop() > $(header).offset().top && !($(header).hasClass('sticky'))) {
         $(header).addClass('sticky');
@@ -14,6 +13,7 @@ $(window).scroll(function () {
         $(header).removeClass('sticky');
     }
 });
+*/
 
 function stick(div) {
     $(div).css({
@@ -21,10 +21,10 @@ function stick(div) {
     })
 }
 
-/*
+
 //window.onscroll = function () {
 $(window).scroll(function () {
-    debugger;
+    console.log(e);
     var header = headers[0];    //implement multiple headers after 1 works
     if($(window).scrollTop() >= $(header).offset().top) {
         $(header).stick();
@@ -32,4 +32,5 @@ $(window).scroll(function () {
     }
     
 });
-*/
+
+
