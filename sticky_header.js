@@ -1,10 +1,10 @@
 function main() {
     headers = document.getElementsByClassName('header');
+    console.log(headers);
     original_positions = [];
     for(i=0;i<headers.length;i++) {
         original_positions[i] = headers[i].offsetTop;
     }
-    console.log(original_positions[0]);
     //body.style.zIndex = 1;
 }
 
