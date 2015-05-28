@@ -3,7 +3,6 @@ function main() {
     var original_positions = [];
     for(i=0;i<headers.length;i++) {
         original_positions[i] = headers[i].offsetTop;
-        console.log(original_positions[i]);
     }
     //body.style.zIndex = 1;
 }
