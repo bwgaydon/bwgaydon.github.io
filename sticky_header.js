@@ -23,7 +23,7 @@ function stick(div) {
 
 window.onscroll = function () {
     var header = headers[0];    //implement multiple headers after 1 works
-    if(window.scrollTop > header.offsetTop) {
+    if($(window).scrollTop() > header.offsetTop) {
         stick(header);
         //window.setTimeout(function() {stick(header)}, 16);
     }
