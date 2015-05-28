@@ -28,6 +28,6 @@ window.onscroll = function () {
         //window.setTimeout(function() {stick(header)}, 16);
     }
     
-});
+};
 
 
