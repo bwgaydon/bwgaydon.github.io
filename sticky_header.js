@@ -14,13 +14,9 @@ $(window).scroll(function () {
     }
 });
 */
-/*
 function stick(div) {
-    var left = div.offsetLeft;
     $(div).css({
-        "position":"absolute",
-        "top":0,
-        "left":left
+        "top": div.offset().top
     })
 }
 
@@ -30,10 +26,8 @@ $(window).scroll(function () {
     var header = headers[0];    //implement multiple headers after 1 works
     
     if($(window).scrollTop() >= $(header).offset().top) {
-        $(header).style.position = 'absolute';
         $(header).stick();
         window.setTimeout(function() {stick(header)}, 16);
     }
     
 });
-*/
