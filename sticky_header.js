@@ -1,4 +1,6 @@
+//GLOBAL VARIABLES
 var headers = document.getElementsByClassName('header');
+var running = false;
 //body.style.zIndex = 1;
 for(i=0;i<headers.length;i++) {
     headers[i].style.zIndex = i+100;
@@ -19,17 +21,17 @@ function stick(div) {
     div.style.top = document.body.scrollTop + 'px';
 }
 
-
 window.onscroll = function () {
     var header = headers[0];    //implement multiple headers after 1 works
     if($(window).scrollTop() > header.offsetTop) {
         var orig = header.offsetTop;
         stick(header);
         while($(window).scrollTop() > orig) {
-            window.setTimeout(function() {header.stick()}, 16);
+            window.setTimeout(function() {stick(header)}, 16);
         }
     }
     
 };
+
 
 
