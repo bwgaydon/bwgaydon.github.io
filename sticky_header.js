@@ -1,12 +1,12 @@
-//GLOBAL VARIABLES
-var headers = document.getElementsByClassName('header');
-var original_positions = [];
-for(i=0;i<headers.length;i++) {
-    original_positions[i] = headers[i].offsetTop;
-    console.log(original_positions[i]);
+function main() {
+    var headers = document.getElementsByClassName('header');
+    var original_positions = [];
+    for(i=0;i<headers.length;i++) {
+        original_positions[i] = headers[i].offsetTop;
+        console.log(original_positions[i]);
+    }
+    //body.style.zIndex = 1;
 }
-var running = false;
-//body.style.zIndex = 1;
 
 /*
 $(window).scroll(function () {
@@ -30,8 +30,9 @@ window.onscroll = function () {
     if($(window).scrollTop() > header.offsetTop) {
         stick(header);
     }
-    
 };
 
-
+$(document).ready(function() {
+    main();
+});
 
