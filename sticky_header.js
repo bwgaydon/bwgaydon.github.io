@@ -16,7 +16,7 @@ $(window).scroll(function () {
 */
 
 function stick(div) {
-    div.style.top = (div.offsetTop+document.body.scrollTop)+'px';
+    div.style.top = document.body.scrollTop + 'px';
     console.log(div.style.top);
 }
 
