@@ -4,6 +4,7 @@ function main() {
     for(i=0;i<headers.length;i++) {
         original_positions[i] = headers[i].offsetTop;
     }
+    console.log(original_positions[0]);
     //body.style.zIndex = 1;
 }
 
@@ -27,8 +28,6 @@ function stick(div) {
 window.onscroll = function () {
     var header = headers[0];    //implement multiple headers after 1 works
     var orig = original_positions[0];
-    console.log(original_positions[0]);
-    console.log(header.offsetTop);
     if(document.body.scrollTop > orig) {
         stick(header);
     }
