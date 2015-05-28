@@ -24,10 +24,10 @@ function stick(div) {
 $(window).scroll(function () {
     
     var header = headers[0];    //implement multiple headers after 1 works
-    
+    debugger;
     if($(window).scrollTop() >= $(header).offset().top) {
         $(header).stick();
-        window.setTimeout(function() {stick(header)}, 16);
+        //window.setTimeout(function() {stick(header)}, 16);
     }
     
 });
