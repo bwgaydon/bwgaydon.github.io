@@ -31,7 +31,5 @@ window.onscroll = function () {
     }
 };
 
-window.onload {
-    main();
-}
+window.onload = main();
 
