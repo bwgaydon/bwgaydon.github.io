@@ -1,4 +1,4 @@
-function main() {
+//function main() {
     headers = document.getElementsByClassName('header');
     debugger;
     original_positions = [];
@@ -6,7 +6,7 @@ function main() {
         original_positions[i] = headers[i].offsetTop;
     }
     //body.style.zIndex = 1;
-}
+//}
 
 /*
 $(window).scroll(function () {
@@ -33,5 +33,5 @@ window.onscroll = function () {
     }
 };
 
-$(document).ready(main());
+//$(document).ready(main());
 
