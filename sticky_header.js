@@ -27,7 +27,7 @@ $(window).scroll(function (e) {
     console.log(e);
     var header = headers[0];    //implement multiple headers after 1 works
     if($(window).scrollTop() >= $(header).offset().top) {
-        $(header).stick();
+        stick(header);
         //window.setTimeout(function() {stick(header)}, 16);
     }
     
