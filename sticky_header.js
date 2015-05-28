@@ -1,6 +1,6 @@
 function main() {
-    var headers = document.getElementsByClassName('header');
-    var original_positions = [];
+    headers = document.getElementsByClassName('header');
+    original_positions = [];
     for(i=0;i<headers.length;i++) {
         original_positions[i] = headers[i].offsetTop;
     }
