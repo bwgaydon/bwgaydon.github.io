@@ -2,7 +2,7 @@ var headers = document.getElementsByClassName('header');
 for(i=0;i<headers.length;i++) {
     headers[i].style.zIndex = i+100;
 }
-/*
+
 $(window).scroll(function () {
     var header = headers[0];
     if( $(window).scrollTop() > $(header).offset().top && !($(header).hasClass('sticky'))) {
@@ -12,8 +12,8 @@ $(window).scroll(function () {
         $(header).removeClass('sticky');
     }
 });
-*/
 
+/*
 function stick(div) {
     var left = div.offsetLeft;
     $(div).css({
@@ -35,3 +35,4 @@ $(window).scroll(function () {
     }
     
 });
+*/
