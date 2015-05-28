@@ -27,7 +27,7 @@ function stick(div) {
 window.onscroll = function () {
     var header = headers[0];    //implement multiple headers after 1 works
     var orig = original_positions[0];
-    if(document.body.scrollTop > header.offsetTop && document.body.scrollTop > orig) {
+    if(document.body.scrollTop > orig) {
         stick(header);
     }
 };
