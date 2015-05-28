@@ -33,5 +33,5 @@ window.onscroll = function () {
     }
 };
 
-window.onload = main();
+$(document).ready(main());
 
