@@ -1,6 +1,6 @@
 function main() {
 
-	var headers         = document.querySelectorAll('.header'),
+	headers         = document.querySelectorAll('.header'),
 	    lastScrollY     = 0,
 	    ticking         = false;
 	debugger;
