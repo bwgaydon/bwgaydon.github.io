@@ -1,8 +1,8 @@
 function main() {
 
-	headers         = document.querySelectorAll('.header'),
-	    lastScrollY     = 0,
-	    ticking         = false;
+	headers = document.querySelectorAll('.header'),
+	lastScrollY = 0,
+	ticking = false;
 	
 	
 	/**
@@ -29,15 +29,15 @@ function main() {
 	 * Our animation callback
 	 */
 	function update() {
-	    var header               = null,
-	        headerTop            = [],
-	        offset               = 0;
+	    var header = null,
+	        headerTop = [],
+	        offset = 0;
 	
 		// first loop is going to do all
 		// the reflows (since we use offsetTop)
 	    for(var h = 0; h < headers.length; h++) {
 	
-	        header       = headers[h];
+	        header = headers[h];
 	        headerTop[h] = header.offsetTop;
 	    }
 	
@@ -46,7 +46,7 @@ function main() {
 		// to the elements' classlist
 	    for(var h = 0; h < headers.length; h++) {
 	
-	        header       = headers[h];
+	        header = headers[h];
 	
 	        if(lastScrollY >= headerTop[h]) {
 	            header.style.top = header.style.top + (lastScrollY - headerTop[h]) + "px";
