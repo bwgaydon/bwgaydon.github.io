@@ -44,14 +44,14 @@ function main() {
 		// second loop is going to go through
 		// the movers and add the left class
 		// to the elements' classlist
-	    //for(var h = 0; h < headers.length; h++) {
+	    for(var h = 0; h < headers.length; h++) {
 	
-	        header = headers[0];
+	        header = headers[h];
 		var calc = lastScrollY - headerTop[h];
 		console.log("calc = " + calc);
             	header.style.top = lastScrollY + "px";
 	
-	    //}
+	    }
 	
 		// allow further rAFs to be called
 	    ticking = false;
