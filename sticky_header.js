@@ -29,7 +29,6 @@ function requestTick() {
 function update() {
     var header               = null,
         headerTop            = [],
-        halfWindowHeight     = window.innerHeight * 0.5,
         offset               = 0;
 
 	// first loop is going to do all
@@ -47,7 +46,7 @@ function update() {
 
         header       = headers[h];
 
-        if(lastScrollY > headerTop[h] - halfWindowHeight) {
+        if(lastScrollY >= headerTop[h]) {
             header.classList.add('sticky');
         } else {
             header.classList.remove('sticky');
