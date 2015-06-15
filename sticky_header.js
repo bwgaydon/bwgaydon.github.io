@@ -48,10 +48,11 @@ function main() {
 	
 	        header = headers[h];
 		var calc = lastScrollY - headerTop[h];
+		console.log("calc = " + calc);
 	        if(calc<0) {
-	            header.style.top = lastScrollY;
+	            header.style.top = headerTop[h] + calc + "px";
 	        } else {
-	            header.style.top = "auto";
+	            header.style.top = "0px";
 	        }
 	
 	    }
