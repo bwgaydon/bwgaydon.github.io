@@ -47,7 +47,7 @@ function main() {
 	    for(var h = 0; h < headers.length; h++) {
 	
 	        header = headers[h];
-	
+	console.log('scrollY is:'+lastScrollY);
 	        if(lastScrollY >= headerTop[h]) {
 	            header.style.top = header.style.top + ((lastScrollY - headerTop[h]) + "px");
 	        } else {
