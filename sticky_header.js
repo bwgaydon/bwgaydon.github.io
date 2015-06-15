@@ -49,9 +49,9 @@ function main() {
 	        header       = headers[h];
 	
 	        if(lastScrollY >= headerTop[h]) {
-	            header.classList.add('sticky');
+	            header.style.top += lastScrollY - headerTop[h];
 	        } else {
-	            header.classList.remove('sticky');
+	            header.style.top += lastScrollY - headerTop[h];
 	        }
 	
 	    }
