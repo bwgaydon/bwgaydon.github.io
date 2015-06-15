@@ -49,7 +49,7 @@ function main() {
 	        header = headers[h];
 		var calc = lastScrollY - headerTop[h];
 	        if(calc<0) {
-	            header.style.top = "0px";
+	            header.style.top = lastScrollY;
 	        } else {
 	            header.style.top = "auto";
 	        }
