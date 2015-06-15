@@ -49,11 +49,7 @@ function main() {
 	        header = headers[h];
 		var calc = lastScrollY - headerTop[h];
 		console.log("calc = " + calc);
-	        if(calc<0) {
-	            header.style.top = lastScrollY + "px";
-	        } else {
-	            header.style.top = "0px";
-	        }
+            	header.style.top = lastScrollY + "px";
 	
 	    }
 	
