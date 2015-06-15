@@ -47,11 +47,11 @@ function main() {
 	    for(var h = 0; h < headers.length; h++) {
 	
 	        header = headers[h];
-	console.log('scrollY is:'+(lastScrollY-headerTop[h]));
-	        if(lastScrollY >= headerTop[h]) {
-	            header.style.top = (lastScrollY - headerTop[h]) + "px";
+		var calc = lastScrollY - headerTop[h];
+	        if(calc<0) {
+	            header.style.top = "0px";
 	        } else {
-	            header.style.top = (lastScrollY - headerTop[h]) + "px";
+	            header.style.top = "auto";
 	        }
 	
 	    }
