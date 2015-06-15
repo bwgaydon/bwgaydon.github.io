@@ -49,9 +49,9 @@ function main() {
 	        header       = headers[h];
 	
 	        if(lastScrollY >= headerTop[h]) {
-	            header.style.top += lastScrollY - headerTop[h];
+	            header.style.top = header.style.top + (lastScrollY - headerTop[h]) + "px";
 	        } else {
-	            header.style.top += lastScrollY - headerTop[h];
+	            header.style.top = header.style.top + (lastScrollY - headerTop[h]) + "px";
 	        }
 	
 	    }
