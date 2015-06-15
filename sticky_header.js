@@ -3,7 +3,6 @@ function main() {
 	headers         = document.querySelectorAll('.header'),
 	    lastScrollY     = 0,
 	    ticking         = false;
-	debugger;
 	
 	
 	/**
