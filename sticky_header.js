@@ -10,6 +10,8 @@ function main() {
 	function onScroll() {
 		//if div reaches top of page
 		//copy div into overflow pane
+		console.log("window scroll = " + window.scrollY);
+		console.log("header offset = " + headers[i].offsetTop);
 		if(window.scrollY >= headers[i].offsetTop) {
 			overflow_header.innerHTML = headers[i].innerHTML;
 			headers[i].style.visibility = 'hidden';
