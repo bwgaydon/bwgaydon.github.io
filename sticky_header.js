@@ -4,7 +4,7 @@ function main() {
 	index = 0;
 	
 	//size overflow pane
-	overflow_pane = document.getElementById('overflow_pane');
+	overflow_pane = document.getElementById('overflow-pane');
 	overflow_pane.style.height = window.innerHeight;
 	overflow_pane.style.width = window.innerWidth;
 	
