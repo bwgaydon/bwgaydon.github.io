@@ -14,16 +14,12 @@ function main() {
 	    lastScrollY = window.scrollY;
 	    requestTick();
 	    */
-	    currentScrollY = window.scrollY;
-	    console.log("lastScrollY = " + lastScrollY);
-	    console.log("currentScrollY = " + currentScrollY);
-	    debugger;
-	    while(currentScrollY - lastScrollY !== 0) {
-	    	window.setTimeout(function() {
-	    		lastScrollY = currentScrollY;
-	    		currentScrollY = window.scrollY;
-	    	}, 100);
-	    }
+	    do {
+		lastScrollY = window.scrollY;
+		window.setTimeout(function() {
+	    	    newScrollY = window.scrollY;
+		}, 100);
+	    } while(lastScrollY !== newScrollY);
 	    requestTick();
 	}
 	
