@@ -5,8 +5,8 @@ function main() {
 	
 	//size overflow pane
 	overflow_pane = document.getElementById('overflow_pane');
-	overflow_pane.style.height = window.height;
-	overflow_pane.style.width = window.width;
+	overflow_pane.style.height = window.innerHeight;
+	overflow_pane.style.width = window.innerWidth;
 	
 	function onScroll() {
 		//if div reaches top of page
