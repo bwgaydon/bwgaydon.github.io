@@ -12,7 +12,7 @@ function main() {
 		//copy div into overflow pane
 		if(window.scrollY >= headers[i].offsetTop) {
 			overflow_header.innerHTML = headers[i].innerHTML;
-			headers[i].style.display = none;
+			headers[i].style.display = 'none';
 			i++;
 		}
 	}
