@@ -15,6 +15,9 @@ function main() {
 	    requestTick();
 	    */
 	    currentScrollY = window.scrollY;
+	    console.log("lastScrollY = " + lastScrollY);
+	    console.log("currentScrollY = " + currentScrollY);
+	    debugger;
 	    while(currentScrollY - lastScrollY !== 0) {
 	    	window.setTimeout(function() {
 	    		lastScrollY = currentScrollY;
