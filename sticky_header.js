@@ -13,6 +13,7 @@ function main() {
 		if(window.scrollY >= headers[i].offsetTop) {
 			overflow_header.innerHTML = headers[i].innerHTML;
 			headers[i].style.display = 'none';
+			overflow_header.style.display = 'block';
 			i++;
 		}
 	}
