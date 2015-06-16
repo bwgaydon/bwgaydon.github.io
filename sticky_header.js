@@ -10,7 +10,17 @@ function main() {
 	 * keeps track of the last scroll value
 	 */
 	function onScroll() {
+	    /*
 	    lastScrollY = window.scrollY;
+	    requestTick();
+	    */
+	    currentScrollY = window.scrollY;
+	    while(currentScrollY - lastScrollY !== 0) {
+	    	window.setTimeout(function() {
+	    		lastScrollY = currentScrollY;
+	    		currentScrollY = window.scrollY;
+	    	}, 100);
+	    }
 	    requestTick();
 	}
 	
@@ -57,8 +67,11 @@ function main() {
 	    ticking = false;
 	}
 	
+	
 	// only listen for scroll events
 	window.addEventListener('scroll', onScroll, false);
+	
+	
 
 };
 
