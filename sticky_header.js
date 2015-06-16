@@ -21,7 +21,7 @@ function main() {
 	}
 	
 	// only listen for scroll events
-	$(body).addEventListener('scroll', onScroll, false);
+	$('body').addEventListener('scroll', onScroll, false);
 	
 	$('.container-div')[0].style.height=window.innerHeight+'px';
 
