@@ -19,7 +19,7 @@ function main() {
 		window.setTimeout(function() {
 	    	    newScrollY = window.scrollY;
 		}, 100);
-	    } while(lastScrollY !== newScrollY);
+	    } while(lastScrollY != newScrollY);
 	    requestTick();
 	}
 	
