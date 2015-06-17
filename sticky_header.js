@@ -7,11 +7,13 @@ function main() {
 	container = document.getElementsByClassName('container')[0];
 	
 	function next_header() {
+		console.log(i);
 		if(i>=0 && i < headers.length) return headers[i];
 		else return null;
 	}
 	
 	function prev_header() {
+		console.log(i);
 		if(i>0 && i < headers.length) return headers[i-1];
 		else if(i == headers.length-1) return headers[i];
 		else return null;
