@@ -8,12 +8,13 @@ function main() {
 	
 	function next_header() {
 		if(i>=0 && i < headers.length) return headers[i];
-		if(i == headers.length) return headers[i-1];
+		else if(i == headers.length) return headers[i-1];
 		else return null;
 	}
 	
 	function prev_header() {
 		if(i>0 && i <= headers.length) return headers[i-1];
+		else if(i==0) return headers[0];
 		else return null;
 	}
 	
