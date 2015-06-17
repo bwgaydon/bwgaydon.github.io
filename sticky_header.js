@@ -17,6 +17,7 @@ function main() {
 			headers[i].style.visibility = 'hidden';
 			overflow_header.style.display = 'block';
 			i++;
+			console.log("i is now " + i);
 		}
 	}
 	
