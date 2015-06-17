@@ -30,7 +30,7 @@ function main() {
 			sticky.style.display = 'block';
 			if(i < headers.length) i++;
 		}
-		console.log(container.scrollTop+"<="+ prev_header().offsetTop);
+		
 		if(container.scrollTop <= prev_header().offsetTop) {
 			
 			//replace header in its place
