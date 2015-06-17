@@ -28,7 +28,7 @@ function main() {
 			sticky.style.backgroundColor = getComputedStyle(next).backgroundColor;
 			next.style.visibility = 'hidden';
 			sticky.style.display = 'block';
-			if(i < headers.length) i++;
+			if(i < headers.length-1) i++;
 		}
 		if(container.scrollTop <= prev_header().offsetTop) {
 			//replace header in its place
