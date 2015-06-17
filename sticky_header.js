@@ -12,8 +12,7 @@ function main() {
 	}
 	
 	function prev_header() {
-		if(i>0 && i < headers.length-1) return headers[i-1];
-		else if(i == headers.length-1) return headers[i];
+		if(i>0 && i <= headers.length) return headers[i-1];
 		else return null;
 	}
 	
@@ -28,7 +27,7 @@ function main() {
 			sticky.style.backgroundColor = getComputedStyle(next).backgroundColor;
 			next.style.visibility = 'hidden';
 			sticky.style.display = 'block';
-			if(i < headers.length-1) i++;
+			if(i < headers.length) i++;
 		}
 		console.log(container.scrollTop+"<="+ prev_header().offsetTop);
 		if(container.scrollTop <= prev_header().offsetTop) {
