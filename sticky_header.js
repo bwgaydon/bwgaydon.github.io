@@ -30,7 +30,9 @@ function main() {
 			sticky.style.display = 'block';
 			if(i < headers.length-1) i++;
 		}
+		console.log(container.scrollTop+"<="+ prev_header().offsetTop);
 		if(container.scrollTop <= prev_header().offsetTop) {
+			
 			//replace header in its place
 			prev_header().style.visibility = "visible";
 			if(i != 0) i--;		//IMPORTANT: this changes return value of prev_header
