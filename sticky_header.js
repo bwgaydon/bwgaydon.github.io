@@ -11,7 +11,7 @@ function main() {
 		//copy div into overflow pane
 		if(container.scrollTop >= headers[i].offsetTop) {
 			overflow_header.innerHTML = headers[i].innerHTML;
-			overflow_header.style.background_color = headers[i].style.background_color;
+			overflow_header.style.backgroundColor = headers[i].style.backgroundColor;
 			headers[i].style.visibility = 'hidden';
 			overflow_header.style.display = 'block';
 			if(headers.length != i+1) i++;
