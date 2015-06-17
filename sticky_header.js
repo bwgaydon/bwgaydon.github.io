@@ -13,7 +13,7 @@ function main() {
 			overflow_header.innerHTML = headers[i].innerHTML;
 			headers[i].style.visibility = 'hidden';
 			overflow_header.style.display = 'block';
-			i++;
+			if(headers.length != i+1) i++;
 			console.log("i is now " + i);
 		}
 	}
