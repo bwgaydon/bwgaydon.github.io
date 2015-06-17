@@ -1,6 +1,6 @@
 function main() {
 
-	headers = document.querySelectorAll('.header'),
+	headers = document.getElementsByClassName('header'),
 	i = 0;	//header index
 	
 	//size overflow pane
