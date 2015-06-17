@@ -12,7 +12,7 @@ function main() {
 		//copy div into overflow pane
 		
 		if(container.scrollTop >= headers[i].offsetTop) {
-			sticky.innerHTML = source.innerHTML;
+			sticky.innerHTML = headers[i].innerHTML;
 			sticky.style.backgroundColor = getComputedStyle(headers[i]).backgroundColor;
 			headers[i].style.visibility = 'hidden';
 			sticky.style.display = 'block';
