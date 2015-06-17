@@ -18,15 +18,12 @@ function main() {
 			sticky.style.display = 'block';
 			if(headers.length != i+1) i++;
 		}
-		/*
 		if(container.scrollTop <= headers[i-1].offsetTop) {
-			target.innerHTML = source.innerHTML;
-			target.style.backgroundColor = getComputedStyle(source).backgroundColor;
-			source.style.display = 'none';
-			target.style.visibility = 'visible';
+			sticky.innerHTML = headers[i-2].innerHTML;
+			sticky.style.backgroundColor = getComputedStyle(headers[i-2]).backgroundColor;
+			headers[i-1].style.visibility = "visible";
 			if(i != 0) i--;
 		}
-		*/
 	}
 	
 	// only listen for scroll events
