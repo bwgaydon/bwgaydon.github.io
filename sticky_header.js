@@ -1,6 +1,6 @@
 function main() {
 
-	headers = document.getElementsByClassName('header'),
+	headers = document.getElementsByClassName('header');
 	//set z-indices
 	for(j=0;j<headers.length;j++) headers[j].style.zIndex = j+1;
 	i = 0;	//header index
