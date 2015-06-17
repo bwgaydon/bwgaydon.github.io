@@ -31,12 +31,11 @@ function main() {
 		}
 		if(container.scrollTop <= prev_header().offsetTop) {
 			//replace header in its place
-			prev = prev_header();
-			prev.style.visibility = "visible";
-			if(i != 0) i--;		//IMPORTANT: prev set to one before initial prev
+			prev_header().style.visibility = "visible";
+			if(i != 0) i--;		//IMPORTANT: this changes return value of prev_header
 			//insert new prev into sticky
-			sticky.innerHTML = prev.innerHTML;
-			sticky.style.backgroundColor = getComputedStyle(prev).backgroundColor;
+			sticky.innerHTML = prev_header().innerHTML;
+			sticky.style.backgroundColor = getComputedStyle(prev_header()).backgroundColor;
 		}
 	}
 	
