@@ -19,7 +19,7 @@ function main() {
 			if(headers.length != i+1) i++;
 		}
 		if(container.scrollTop <= headers[i-1].offsetTop) {
-			sticky.innerHTML = headers[i-2].innerHTML;
+			if(i >= 2) sticky.innerHTML = headers[i-2].innerHTML;
 			sticky.style.backgroundColor = getComputedStyle(headers[i-2]).backgroundColor;
 			headers[i-1].style.visibility = "visible";
 			if(i != 0) i--;
