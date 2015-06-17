@@ -6,15 +6,24 @@ function main() {
 	overflow_header = document.getElementById('overflow_header');
 	container = document.getElementsByClassName('container')[0];
 	
+	function stick(source, target) {
+		target.innerHTML = source.innerHTML;
+		target.style.backgroundColor = getComputedStyle(source).backgroundColor;
+		source.style.visibility = 'hidden';
+		target.style.display = 'block';
+	}
+	
 	function onScroll() {
 		//if div reaches top of page
 		//copy div into overflow pane
+		
 		if(container.scrollTop >= headers[i].offsetTop) {
-			overflow_header.innerHTML = headers[i].innerHTML;
-			overflow_header.style.backgroundColor = getComputedStyle(headers[i]).backgroundColor;
-			headers[i].style.visibility = 'hidden';
-			overflow_header.style.display = 'block';
+			stick(headers[i], overflow_header);
 			if(headers.length != i+1) i++;
+		}
+		if(container.scrollTop <= headers[i-1].offsetTop) {
+			stick(headers[i], overflow_header);
+			if(i != 0) i--;
 		}
 	}
 	
