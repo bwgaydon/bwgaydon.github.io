@@ -6,6 +6,7 @@ function main() {
 	i = 0;	//header index
 	
 	sticky = document.getElementById('overflow_header');
+	sticky_holder = document.getElementById('overflow_pane');
 	container = document.getElementsByClassName('container')[0];
 	
 	function next_header() {
@@ -26,7 +27,8 @@ function main() {
 		//copy div into overflow pane
 		
 		if(next_header().offsetTop < sticky.offsetHeight) {
-			sticky.style.top -= (sticky.offsetHeight - next_header().offsetHeight);
+			console.log("TRIGGERED");
+			//sticky_holder.style.top = 0 - 
 		}
 		
 		if(container.scrollTop >= next_header().offsetTop) {
