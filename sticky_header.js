@@ -26,7 +26,7 @@ function main() {
 		//if div reaches top of page
 		//copy div into overflow pane
 		
-		if(next_header().scrollTop < sticky.offsetHeight) {
+		if(next_header().scrollTop < sticky.offsetHeight + sticky.scrollTop) {
 			console.log("TRIGGERED");
 			//sticky_holder.style.top = 0 - 
 		}
