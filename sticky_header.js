@@ -25,6 +25,10 @@ function main() {
 		//if div reaches top of page
 		//copy div into overflow pane
 		
+		if(next_header().offsetTop < sticky.offsetHeight) {
+			sticky.style.top -= (sticky.offsetHeight - next_header().offsetHeight);
+		}
+		
 		if(container.scrollTop >= next_header().offsetTop) {
 			next = next_header();
 			sticky.innerHTML = next.innerHTML;
