@@ -1,7 +1,7 @@
 .container {
   position: absolute;
   margin: auto;
-  border: 1px #aaaaaa
+  border: 1px #aaaaaa;
   width: 720;
   height: 1280;
   text-align: center;
@@ -10,17 +10,45 @@
 
 #main {
   position: relative;
+  display: block;
   font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 #login {
   position: relative;
+  display: block;
   left: 400px;
   font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 #signup {
   position: relative;
+  display: block;
   right: 400px;
   font: normal Helvetica #aaaaaa, sans-serif;
+}
+
+.button_small {
+  display: block;
+  height: 40px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 50%;
+  border: 1px;
+  border-radius: 3px;
+  background-color: green;
+}
+
+.button_large {
+  display: block;
+  height: 80px;
+  width: 50%;
+  margin: auto;
+  line-height: 50%;
+  text-align: center;
+  line-height: 50%;
+  border: 1px;
+  border-radius: 3px;
+  background-color: green;
 }
