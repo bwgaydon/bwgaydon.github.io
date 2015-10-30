@@ -1,54 +1,61 @@
+body {
+    width: 100%;
+}
+
 .container {
-  position: absolute;
-  margin: auto;
-  border: 1px #aaaaaa;
-  width: 720;
-  height: 1280;
-  text-align: center;
-  font: bold Helvetica red, sans-serif;
+    position: absolute;
+    margin-left: 50%;
+    border: 1px solid #aaaaaa;
+    width: 720px;
+    height: 1280px;
+    text-align: center;
+    font: bold Helvetica red, sans-serif;
 }
 
 #main {
-  position: relative;
-  display: block;
-  font: normal Helvetica #aaaaaa, sans-serif;
+    margin-top: 25%;
+    left: 50%;
+    position: absolute; 
+    display: block;
+    font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 #login {
-  position: relative;
-  display: block;
-  left: 400px;
-  font: normal Helvetica #aaaaaa, sans-serif;
+    margin-top: 25%;
+    position: absolute;
+    display: block;
+    left: 400px;
+    font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 #signup {
-  position: relative;
-  display: block;
-  right: 400px;
-  font: normal Helvetica #aaaaaa, sans-serif;
+    margin-top: 25%;
+    position: absolute;
+    display: block;
+    right: 400px;
+    font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 .button_small {
-  display: block;
-  height: 40px;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  line-height: 50%;
-  border: 1px;
-  border-radius: 3px;
-  background-color: green;
+    display: block;
+    height: 40px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 1px;
+    border-radius: 3px;
+    background-color: green;
 }
 
 .button_large {
-  display: block;
-  height: 80px;
-  width: 50%;
-  margin: auto;
-  line-height: 50%;
-  text-align: center;
-  line-height: 50%;
-  border: 1px;
-  border-radius: 3px;
-  background-color: green;
+    display: block;
+    height: 80px;
+    width: 50%;
+    margin: auto;
+    line-height: 100%;
+    text-align: center;
+    line-height: 50%;
+    border: 1px;
+    border-radius: 3px;
+    background-color: green;
 }
