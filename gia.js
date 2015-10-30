@@ -1,4 +1,16 @@
+function events() {
+    document.getElementById('login_button').addEventListener('click', login_animate);
+    document.getElementById('signup_button').addEventListener('click', signup_animate);
+}
+
+function login_animate() {
+    
+}
+
+function signup_animate() {
+    
+}
+
 $(document).ready(function() {
-  document.getElementById('signup').style.top = 0 - window.getComputedStyle($(signup)[0]).height;
-  document.getElementById('signup').style.top = 0 - window.getComputedStyle($(login)[0]).height;
+	
 });
