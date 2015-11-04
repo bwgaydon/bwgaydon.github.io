@@ -12,10 +12,6 @@ function signup_animate() {
     
 }
 
-function clearBox(box) {
-	box.value = "";
-}
-
 $(document).ready(function() {
 	events();
 });
