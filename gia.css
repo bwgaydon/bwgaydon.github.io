@@ -13,8 +13,10 @@ body {
 }
 
 .view {
-    margin-top: 25%;
     position: absolute;
+    margin: 25% 50%;
+    left: 0;
+    right: 0;
     display: block;
     font: normal Helvetica #aaaaaa, sans-serif;
 }
