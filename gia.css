@@ -10,7 +10,7 @@ body {
     color: red;
 }
 
-#have_account #need_account {
+#have_account, #need_account {
     display: block;
     font: 8px normal Helvetica, sans-serif;
 }
