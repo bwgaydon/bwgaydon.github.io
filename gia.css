@@ -4,10 +4,10 @@ body {
 
 .container {
     position: absolute;
-    margin-left: calc(50% - 360px);
+    margin-left: calc(50% - 240px);
     border: 1px solid #aaaaaa;
-    width: 720px;
-    height: 1280px;
+    width: 480px;
+    height: 640px;
     text-align: center;
     font: bold Helvetica red, sans-serif;
 }
