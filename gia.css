@@ -2,6 +2,19 @@ body {
     width: 100%;
 }
 
+#logo {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font: 24px bold Helvetica, sans-serif;
+    color: red;
+}
+
+#have_account #need_account {
+    display: block;
+    font: 8px normal Helvetica, sans-serif;
+}
+
 .container {
     position: absolute;
     margin-left: calc(50% - 240px);
