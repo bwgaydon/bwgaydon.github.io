@@ -20,5 +20,5 @@ function clearBox(box) {
 }
 
 $(document).ready(function() {
-	
+	events();
 });
