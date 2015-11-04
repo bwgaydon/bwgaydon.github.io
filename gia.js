@@ -4,11 +4,17 @@ function events() {
 }
 
 function login_animate() {
-    alert('login');
 }
 
 function signup_animate() {
-    alert('signup');
+}
+
+function need_acc_animate() {
+	
+}
+
+function have_acc_animate() {
+	
 }
 
 $(document).ready(function() {
