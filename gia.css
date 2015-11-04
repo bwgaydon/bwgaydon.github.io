@@ -15,8 +15,8 @@ body {
 .view {
     position: absolute;
     margin: 25% 50%;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     display: block;
     font: normal Helvetica #aaaaaa, sans-serif;
 }
@@ -36,8 +36,8 @@ body {
 .button_small {
     display: block;
     height: 40px;
-    width: 50%;
-    margin: 10px;
+    width: 90px;
+    margin: 10px calc(50% - 45px);
     text-align: center;
     border: 1px;
     border-radius: 3px;
@@ -46,9 +46,9 @@ body {
 
 .button_large {
     display: block;
-    height: 80px;
-    width: 50%;
-    margin: 10px;
+    height: 60px;
+    width: 90px;
+    margin: 10px calc(50% - 45px);
     line-height: 100%;
     text-align: center;
     line-height: 50%;
