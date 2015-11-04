@@ -46,12 +46,10 @@ body {
 
 #login {
     left: -500px;
-    margin: 25% 50% 25% 0%;
 }
 
 #signup {
     left: 500px;
-    margin: 25% 0% 25% 50%;
 }
 
 .button_small {
