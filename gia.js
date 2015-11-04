@@ -4,11 +4,11 @@ function events() {
 }
 
 function login_animate() {
-    alert('boobs');
+    alert('login');
 }
 
 function signup_animate() {
-    alert('boobs');
+    alert('signup');
 }
 
 $(document).ready(function() {
