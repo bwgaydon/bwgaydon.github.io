@@ -5,11 +5,11 @@ function events() {
 }
 
 function login_animate() {
-    
+    alert('boobs');
 }
 
 function signup_animate() {
-    
+    alert('boobs');
 }
 
 $(document).ready(function() {
