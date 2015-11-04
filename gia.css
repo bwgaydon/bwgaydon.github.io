@@ -12,35 +12,30 @@ body {
     font: bold Helvetica red, sans-serif;
 }
 
-#main {
+.view {
     margin-top: 25%;
-    left: 50%;
-    position: absolute; 
+    position: absolute;
     display: block;
     font: normal Helvetica #aaaaaa, sans-serif;
+}
+
+#main {
+    left: 0px;
 }
 
 #login {
-    margin-top: 25%;
-    position: absolute;
-    display: block;
     left: 400px;
-    font: normal Helvetica #aaaaaa, sans-serif;
 }
 
 #signup {
-    margin-top: 25%;
-    position: absolute;
-    display: block;
-    right: 400px;
-    font: normal Helvetica #aaaaaa, sans-serif;
+    left: -400px;
 }
 
 .button_small {
     display: block;
     height: 40px;
     width: 50%;
-    margin: auto;
+    margin: 10px;
     text-align: center;
     border: 1px;
     border-radius: 3px;
@@ -51,7 +46,7 @@ body {
     display: block;
     height: 80px;
     width: 50%;
-    margin: auto;
+    margin: 10px;
     line-height: 100%;
     text-align: center;
     line-height: 50%;
