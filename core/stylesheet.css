@@ -29,6 +29,7 @@ div {
   height: 100%;
   width: calc(100%/3);
   display: inline-block;
+  margin: auto;
 }
 
 .column img {
