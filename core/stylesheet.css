@@ -27,7 +27,7 @@ div {
 
 .column {
   height: 100%;
-  width: calc(100%/3);
+  width: 400px;
   display: inline-block;
   margin: auto;
 }
