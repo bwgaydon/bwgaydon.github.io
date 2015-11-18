@@ -17,7 +17,7 @@ div {
 }
 
 .container {
-  width: 750px;
+  width: 1200px;
   height: 800px;
   display: block;
   margin-top: 20px;
@@ -27,7 +27,7 @@ div {
 
 .column {
   height: 100%;
-  width: 250px;
+  width: 399px;
   display: inline-block;
   margin: auto;
 }
