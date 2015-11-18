@@ -21,6 +21,8 @@ div {
   height: 100%;
   display: block;
   margin-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .column {
