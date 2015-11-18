@@ -37,4 +37,5 @@ div {
   max-height: 100px;
   width: auto;
   max-width: 100%;
+  margin-left: calc(calc(100% - width)/2);
 }
