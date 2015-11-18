@@ -24,7 +24,7 @@
 
 .column {
   height: 100%;
-  width: calc(100%/3);
+  width: calc(100%/3 - 1);
   display: inline-block;
   margin: auto;
 }
