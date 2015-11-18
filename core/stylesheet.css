@@ -20,14 +20,13 @@ div {
   width: 80%;
   height: 100%;
   display: block;
-  margin: 10%;
+  margin-top: 20px;
 }
 
 .column {
   height: 100%;
   width: 33%;
   display: inline-block;
-  margin: 0px;
 }
 
 .column img {
