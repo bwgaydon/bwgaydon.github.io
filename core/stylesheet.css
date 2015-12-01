@@ -3,6 +3,7 @@
   background-color: #4d3571;
   height: 120px;
   width: 100%;
+  position: relative;
   z-index: 1;
 }
 
@@ -11,6 +12,7 @@
   position: relative;
   float: left;
   z-index: 2;
+  height: 100%;
 }
 
 .container {
