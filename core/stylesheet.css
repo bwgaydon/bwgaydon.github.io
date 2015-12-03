@@ -41,3 +41,9 @@
   margin: auto;
   margin-bottom: 30px;
 }
+
+.app_img img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
