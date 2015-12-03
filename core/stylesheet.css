@@ -29,7 +29,6 @@
   width: calc(100%/3 - 3px);
   display: inline-block;
   margin: auto;
-  border: 1px solid #AAAAAA;
   text-align: center;
   vertical-align: middle;
 }
