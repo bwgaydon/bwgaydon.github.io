@@ -1,7 +1,8 @@
-$(document).ready() {
-
-  $("#metrics").addEventListener("focus", function(){
-  	$("#metrics").css(backgroundColor,"#d5c8e5");
+$(document).ready(function() {
+	$(".menu_button").each(function() {
+  	this.addEventListener("click",function() {
+			$(this).toggleClass("selected");
+  	});
   });
   
-}
+});
