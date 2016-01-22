@@ -35,8 +35,18 @@ body {
   vertical-align: middle;
   font-family: sans-serif;
   color: #503571;
-  border: 1px solid #888888;
-  border-top: none;
+  background-color: #EEEEEE;
+  //border: 1px solid #888888;
+  border-bottom: 1px solid #FFFFFF;
+}
+#metrics_button {
+  
+}
+#reports_button {
+  
+}
+#settings_button {
+  
 }
 #admin_button {
   position: fixed;
@@ -50,4 +60,7 @@ body {
   font-family: sans-serif;
   background-color: #503571;
   color: #FFFFFF;
+}
+.selected {
+  background-color: #d5c8e5;
 }
