@@ -2,6 +2,8 @@ body {
   overflow: hidden;
 }
 .header {
+  float: left;
+  clear: both;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -36,7 +38,6 @@ body {
   font-family: sans-serif;
   color: #503571;
   background-color: #EEEEEE;
-  //border: 1px solid #888888;
   border-bottom: 1px solid #FFFFFF;
 }
 #metrics_button {
