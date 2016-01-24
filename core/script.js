@@ -12,7 +12,7 @@ $(document).ready(function() {
 	currentMenu = $("#metrics_button");
   	currentMenu.addClass("selected");
   	
-  	$("#egg")[0].addEventListener("hover",function() {
+  	$("#egg")[0].addEventListener("click",function() {
   		$(this).css("visibility","visible");
   	});
   	
