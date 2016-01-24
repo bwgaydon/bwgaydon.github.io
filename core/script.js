@@ -12,10 +12,6 @@ $(document).ready(function() {
 	currentMenu = $("#metrics_button");
   	currentMenu.addClass("selected");
   	
-  	$("#egg")[0].addEventListener("click",function() {
-  		$("#egg").css("visibility","visible");
-  	});
-  	
 	$(".menu_button").each(function() {
   	this.addEventListener("click",function(){
     	contextSwitch($(this));
