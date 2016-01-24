@@ -17,6 +17,14 @@ body {
   height: 55px;
   width: auto;
 }
+#egg {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 55px;
+  width: auto;
+  display: none;
+}
 #content {
   position: fixed;
   top: 55px;
