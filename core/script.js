@@ -13,7 +13,7 @@ $(document).ready(function() {
   	currentMenu.addClass("selected");
   	
   	$("#egg")[0].addEventListener("hover",function() {
-  		$(this).css("visibility","visible");
+  		$(this).css("visibility":"visible");
   	});
   	
 	$(".menu_button").each(function() {
