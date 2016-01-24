@@ -23,7 +23,7 @@ body {
   right: 0px;
   height: 55px;
   width: auto;
-  visibility: visible;
+  visibility: hidden;
 }
 #content {
   position: fixed;
