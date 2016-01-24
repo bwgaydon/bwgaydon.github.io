@@ -10,8 +10,12 @@ function contextSwitch(button) {
 $(document).ready(function() {
 	//global variables
 	currentMenu = $("#metrics_button");
-  currentMenu.addClass("selected");
-  
+  	currentMenu.addClass("selected");
+  	
+  	$("#egg")[0].addEventListener("hover",function() {
+  		$(this).css("display","block");
+  	}
+  	
 	$(".menu_button").each(function() {
   	this.addEventListener("click",function(){
     	contextSwitch($(this));
