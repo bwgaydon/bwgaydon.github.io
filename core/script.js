@@ -14,7 +14,7 @@ $(document).ready(function() {
   	
   	$("#egg")[0].addEventListener("hover",function() {
   		$(this).css("display","block");
-  	}
+  	});
   	
 	$(".menu_button").each(function() {
   	this.addEventListener("click",function(){
