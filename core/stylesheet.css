@@ -37,6 +37,7 @@ body {
   color: #503571;
   background-color: #EEEEEE;
   border-bottom: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 #metrics_button {
   
