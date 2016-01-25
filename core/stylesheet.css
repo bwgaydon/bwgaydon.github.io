@@ -59,6 +59,7 @@ body {
   font-family: sans-serif;
   color: #FFFFFF;
   background-color: #503571;
+  border: 0;
 }
 .selected {
   background-color: #d5c8e5 !important;
