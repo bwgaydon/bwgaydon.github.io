@@ -41,7 +41,7 @@ body {
   cursor: pointer;
   transition: padding-left 0.5s ease;
 }
-.menu_button:hover {
+.menu_button:click {
   padding-left: 15px;
 }
 #metrics_button {
