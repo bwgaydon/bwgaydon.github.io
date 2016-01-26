@@ -26,7 +26,7 @@ body {
 }
 .menu_button {
   position: relative;
-  margin-left: 0px;
+  padding-left: 0px;
   float: left;
   clear: left;
   width: 120px;
@@ -39,10 +39,10 @@ body {
   background-color: #EEEEEE;
   border-bottom: 1px solid #FFFFFF;
   cursor: pointer;
-  transition: margin-left 0.5s ease;
+  transition: padding-left 0.5s ease;
 }
 .menu_button:hover {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 #metrics_button {
   
