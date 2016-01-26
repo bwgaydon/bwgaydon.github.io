@@ -69,4 +69,5 @@ body {
 }
 .selected {
   background-color: #d5c8e5 !important;
+  padding-left: 10px !important;
 }
