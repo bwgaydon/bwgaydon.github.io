@@ -28,7 +28,7 @@ body {
   position: relative;
   float: left;
   clear: left;
-  width: 20px;
+  width: 120px;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -38,10 +38,10 @@ body {
   background-color: #EEEEEE;
   border-bottom: 1px solid #FFFFFF;
   cursor: pointer;
-  transition: width 1s ease;
+  transition: width 0.5s ease;
 }
 .menu_button:hover {
-  width: 120px;
+  width: 150px;
 }
 #metrics_button {
   
