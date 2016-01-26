@@ -38,6 +38,10 @@ body {
   background-color: #EEEEEE;
   border-bottom: 1px solid #FFFFFF;
   cursor: pointer;
+  transition: width 1s ease;
+}
+.menu_button:hover {
+  width: 100%;
 }
 #metrics_button {
   
