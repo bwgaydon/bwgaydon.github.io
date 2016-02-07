@@ -32,13 +32,17 @@
         width: 100%;
         height: auto;
       }
+      #wrapper {
+        text-align:center;
+      }
       #headline {
         position:absolute;
         display:inline-block;
-        text-align:center;
         top:40%;
         width:20%;
         height:auto;
+        color:#FFFFFF;
+        
       }
       #sub {
         position: relative;
@@ -46,7 +50,6 @@
         display: block;
         width: 100%;
         height: auto;
-        background-color: green;
       }
       .col {
         position: relative;
@@ -65,10 +68,12 @@
   <body>
   <div id="jumbo">
     <img src="http://i.imgur.com/Uw9WxzL.png?2"/>
-    <div id="headline">
-      <h1>Brian Gaydon</h1>
-      <p class="lead">Software engineer, skier, musician, beer enthusiast.</p>
-      <p><a class="btn btn-lg btn-success" href="https://youtu.be/3Irj949Nrew" role="button">Check me out.</a></p>
+    <div class="wrapper">
+      <div id="headline">
+        <h1>Brian Gaydon</h1>
+        <p class="lead">Software engineer, skier, musician, beer enthusiast.</p>
+        <p><a class="btn btn-lg btn-success" href="https://youtu.be/3Irj949Nrew" role="button">Check me out.</a></p>
+      </div>
     </div>
   </div>
   <div id="sub">
