@@ -1,21 +1,22 @@
 function contextSwitch(button) {
 	if(button.hasClass("selected")) return;
-  else {
-  	currentMenu.toggleClass("selected");
-    button.toggleClass("selected");
-    currentMenu = button;
-  }
+	else {
+	  	currentMenu.toggleClass("selected");
+	    button.toggleClass("selected");
+	    currentMenu = button;
+	}
 }
 
 $(document).ready(function() {
 	//global variables
 	currentMenu = $("#metrics_button");
-  	currentMenu.addClass("selected");
-  	
+	currentMenu.addClass("selected");
+	  
+	//set up menu buttonanimations
 	$(".menu_button").each(function() {
-  	this.addEventListener("click",function(){
-    	contextSwitch($(this));
-    });
-  });
+		this.addEventListener("click",function(){
+			contextSwitch($(this));
+		});
+	});
   
 });
