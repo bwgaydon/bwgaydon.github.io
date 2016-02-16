@@ -13,7 +13,7 @@ function initMap() {
 }
 */
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: 40.0076,
             lng: -105.26594
@@ -23,7 +23,5 @@ function initMap() {
 }
 
 $(document).ready(function() {
-	
-	var map;
-	window.initMap();
+	initMap();
 });
