@@ -4,7 +4,7 @@ function initMap() {
 	var mapOptions = {
 		zoom: 8,
 		center: myLatlng,
-		mapTypeId: google.maps.MapTypeId.SATELLITE
+		mapTypeId: google.maps.MapTypeId.HYBRID
 	};
 	
 	var map = new google.maps.Map(document.getElementById("map"),mapOptions);
