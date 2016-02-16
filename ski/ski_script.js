@@ -12,13 +12,13 @@ function initMap() {
     
 }
 */
-function initMap() {
+window.initMap = function() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: 40.0076,
             lng: -105.26594
         },
-        zoom: 8
+        zoom: 12
     });
 }
 
