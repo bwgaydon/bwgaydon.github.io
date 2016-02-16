@@ -25,5 +25,5 @@ window.initMap = function() {
 $(document).ready(function() {
 	
 	var map;
-	initMap();
+	window.initMap();
 });
