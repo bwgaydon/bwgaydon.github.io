@@ -34,7 +34,7 @@ $(document).ready(function() {
     //if redirect from oauth page, catch codes
     if(window.location.search.substring(1) != "") {
         var code = getQueryVariable("code");
-        console.log(code);
+        console.log("code= " + code);
     }
     
 });
