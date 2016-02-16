@@ -27,11 +27,11 @@ $(document).ready(function() {
     $("#marketing")[0].addEventListener("click", function() {
     window.open("https://login.mailchimp.com/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Ffake.fake&state=mailchimp3&client_id=627660219231", "Mailchimp OAuth", "windowParams");
     });
-    
+    /*
     $("#accounting")[0].addEventListener("click", function() {
     window.open("https://appcenter.intuit.com/Connect/Begin?oauth_token=qyprdDTz75mmcY0hDAaLYDxKkyNjtsX7XQZ58UFVyottByeg&oauth_callback=https%3A%2F%2Ffake.fake%3Fstate%3Dquickbooks", "Quickbooks OAuth", "windowParams");
     });
-    
+    */
     $("#support")[0].addEventListener("click", function() {
     window.open("https://appcenter.intuit.com/Connect/Begin?oauth_token=qyprdqJYJc8o1MlkOnpXquZYNHohxwpSOla0VTxIvOGQSNTp&oauth_callback=https%3A%2F%2Ffake.fake%3Fstate%3Dquickbooks", "Quickbooks OAuth", "windowParams");
     });
