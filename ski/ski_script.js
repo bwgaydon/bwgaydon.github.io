@@ -17,35 +17,35 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 	
 	//resort markers
-	var image = 'images/abasin.jpg';
+	var image = {url:'images/abasin.jpg',size: new google.maps.Size(20, 20)};
     	var abasin = new google.maps.Marker({
 	    position: abasinLL,
 	    map: map,
 	    title: 'Arapahoe Basin',
 	    icon: image
 	});
-	image = 'images/keystone.jpg';
+	image.url = 'images/keystone.jpg';
     	var keystone = new google.maps.Marker({
 	    position: keystoneLL,
 	    map: map,
 	    title: 'Keystone',
 	    icon: image
 	});
-	image = 'images/breck.png';
+	image.url = 'images/breck.png';
     	var breck = new google.maps.Marker({
 	    position: breckLL,
 	    map: map,
 	    title: 'Breckenridge',
 	    icon: image
 	});
-	image = 'images/vail.png';
+	image.url = 'images/vail.png';
     	var vail = new google.maps.Marker({
 	    position: vailLL,
 	    map: map,
 	    title: 'Vail',
 	    icon: image
 	});
-	image = 'images/beaver.jpg';
+	image.url = 'images/beaver.jpg';
     	var beaver = new google.maps.Marker({
 	    position: beaverLL,
 	    map: map,
