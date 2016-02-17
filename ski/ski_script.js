@@ -9,7 +9,11 @@ function initMap() {
 	
 	var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 	//markers: https://developers.google.com/maps/documentation/javascript/markers
-    
+    var marker = new google.maps.Marker({
+	    position: myLatLng,
+	    map: map,
+	    title: 'Hello World!'
+	});
 }
 
 
