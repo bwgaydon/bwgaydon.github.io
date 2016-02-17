@@ -17,7 +17,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 	
 	//resort markers
-	var image = {url:'images/abasin.jpg',scaledSize: new google.maps.Size(20, 20)};
+	var image = {url:'images/abasin.jpg',scaledSize: new google.maps.Size(30, 30)};
     	var abasin = new google.maps.Marker({
 	    position: abasinLL,
 	    map: map,
