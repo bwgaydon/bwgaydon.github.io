@@ -1,12 +1,12 @@
 
 function initMap() {
 	
-	var mapCenter = new google.maps.LatLng(39.5309506,-106.1812467);
-	var abasinLL = new google.maps.LatLng(39.6417, -105.8717);
-	var keystoneLL = new google.maps.LatLng(39.6050, -105.9542);
-	var breckLL = new google.maps.LatLng(39.4996, -106.0433);
-	var vailLL = new google.maps.LatLng(39.6358, -106.3631);
-	var beaverLL = new google.maps.LatLng(39.6050, -106.5153);
+	var mapCenter = new google.maps.LatLng(39.5509506,-106.1812467);
+	var abasinLL = new google.maps.LatLng(39.642411, -105.871656);
+	var keystoneLL = new google.maps.LatLng(39.605871, -105.941375);
+	var breckLL = new google.maps.LatLng(39.480504, -106.066885);
+	var vailLL = new google.maps.LatLng(39.608681, -106.354909);
+	var beaverLL = new google.maps.LatLng(39.605010, -106.516630);
 	
 	var mapOptions = {
 		zoom: 11,
