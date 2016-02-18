@@ -1,5 +1,5 @@
 
-function initMap() {
+function initMap()  {
 	
 	var mapCenter = new google.maps.LatLng(39.567890,-106.1812467);
 	var abasinLL = new google.maps.LatLng(39.642411, -105.871656);
@@ -96,9 +96,15 @@ function initMap() {
 	vailInfo.open(map, vail);
 	beaverInfo.open(map, beaver);
 	
+	
+	
 }
 
 
 $(document).ready(function() {
+	
+	epicMixWeather = "http://www.epicmix.com/vailresorts/sites/epicmix/api/mobile/weather.ashx";
+	
 	initMap();
+	
 });
