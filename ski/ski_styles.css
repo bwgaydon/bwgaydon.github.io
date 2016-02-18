@@ -27,7 +27,16 @@ body {
 }
 
 #header_title {
+    display:inline-block;
+    float:left;
     margin-left: 1em;
+}
+
+#nameplate {
+    font-size: 0.75em;
+    display:inline-block;
+    float:right;
+    margin-right: 1em;
 }
 
 #content {
