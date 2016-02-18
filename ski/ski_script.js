@@ -18,12 +18,20 @@ function initMap() {
 	
 	//resort markers
 	var image = {url:'images/abasin.jpg',scaledSize: new google.maps.Size(30, 30)};
+	
 	var abasin = new google.maps.Marker({
 	    position: abasinLL,
 	    map: map,
 	    title: 'Arapahoe Basin',
 	    icon: image
 	});
+	abasinInfo = new google.maps.InfoWindow({
+			content: "Arapahoe Basin"
+	});
+	abasin.addListener('click', function() {
+		abasinInfo.open(map, abasin);
+	});
+	
 	image.url = 'images/keystone.jpg';
 	var keystone = new google.maps.Marker({
 	    position: keystoneLL,
@@ -31,12 +39,25 @@ function initMap() {
 	    title: 'Keystone',
 	    icon: image
 	});
+	keystoneInfo = new google.maps.InfoWindow({
+			content: "Keystone"
+	});
+	keystone.addListener('click', function() {
+		keystoneInfo.open(map, keystone);
+	});
+	
 	image.url = 'images/breck.png';
 	var breck = new google.maps.Marker({
 	    position: breckLL,
 	    map: map,
 	    title: 'Breckenridge',
 	    icon: image
+	});
+	breckInfo = new google.maps.InfoWindow({
+			content: "Breckenridge"
+	});
+	breck.addListener('click', function() {
+		breckInfo.open(map, breck);
 	});
 	
 	image.url = 'images/vail.png';
@@ -46,6 +67,13 @@ function initMap() {
 	    title: 'Vail',
 	    icon: image
 	});
+	vailInfo = new google.maps.InfoWindow({
+			content: "Vail"
+	});
+	vail.addListener('click', function() {
+		vailInfo.open(map, vail);
+	});
+	
 	image.url = 'images/beaver.jpg';
 	var beaver = new google.maps.Marker({
 	    position: beaverLL,
@@ -53,18 +81,15 @@ function initMap() {
 	    title: 'Beaver Creek',
 	    icon: image
 	});
+	beaverInfo = new google.maps.InfoWindow({
+		content: "Beaver Creek"
+	});
+	beaver.addListener('click', function() {
+		beaverInfo.open(map, beaver);
+	});
 	
 	resorts = [abasin,keystone,breck,vail,beaver];
-	var infoWindow;
-	var i;
-	for(i=0; i<resorts.length;i++) {
-		infowindow = new google.maps.InfoWindow({
-			content: resorts[i].title
-		});
-		resorts[i].addListener('click', function() {
-			infowindow.open(map, resorts[i]);
-		});
-	}
+	
 	
 }
 
