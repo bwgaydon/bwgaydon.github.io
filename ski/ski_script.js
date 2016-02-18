@@ -1,7 +1,7 @@
 
 function initMap() {
 	
-	var mapCenter = new google.maps.LatLng(39.5615506,-106.1812467);
+	var mapCenter = new google.maps.LatLng(39.5515006,-106.1812467);
 	var abasinLL = new google.maps.LatLng(39.642411, -105.871656);
 	var keystoneLL = new google.maps.LatLng(39.605871, -105.941375);
 	var breckLL = new google.maps.LatLng(39.480504, -106.066885);
