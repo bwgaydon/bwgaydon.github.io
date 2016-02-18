@@ -103,7 +103,7 @@ function initMap()  {
 
 $(document).ready(function() {
 	
-	epicMixWeather = "http://www.epicmix.com/vailresorts/sites/epicmix/api/mobile/weather.ashx";
+	epicMixWeather = $.getJSON("http://www.epicmix.com/vailresorts/sites/epicmix/api/mobile/weather.ashx");
 	
 	initMap();
 	
