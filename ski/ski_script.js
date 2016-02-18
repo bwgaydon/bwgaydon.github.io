@@ -56,7 +56,8 @@ function initMap() {
 	
 	resorts = [abasin,keystone,breck,vail,beaver];
 	var infoWindow;
-	for(i in resorts) {
+	var i;
+	for(i=0; i<resorts.length;i++) {
 		infowindow = new google.maps.InfoWindow({
 			content: resorts[i].title
 		});
