@@ -38,6 +38,9 @@ body {
     float:right;
     margin-right: 1em;
 }
+#nameplate a {
+    color:#FFFFFF;
+}
 
 #content {
     position: relative;
