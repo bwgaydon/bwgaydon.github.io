@@ -90,6 +90,11 @@ function initMap() {
 	
 	resorts = [abasin,keystone,breck,vail,beaver];
 	
+	keystoneInfo.open(map, keystone);
+	abasinInfo.open(map, abasin);
+	breckInfo.open(map, breck);
+	vailInfo.open(map, vail);
+	beaverInfo.open(map, beaver);
 	
 }
 
