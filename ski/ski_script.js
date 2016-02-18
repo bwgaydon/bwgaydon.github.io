@@ -18,40 +18,52 @@ function initMap() {
 	
 	//resort markers
 	var image = {url:'images/abasin.jpg',scaledSize: new google.maps.Size(30, 30)};
-    	var abasin = new google.maps.Marker({
+	var abasin = new google.maps.Marker({
 	    position: abasinLL,
 	    map: map,
 	    title: 'Arapahoe Basin',
 	    icon: image
 	});
 	image.url = 'images/keystone.jpg';
-    	var keystone = new google.maps.Marker({
+	var keystone = new google.maps.Marker({
 	    position: keystoneLL,
 	    map: map,
 	    title: 'Keystone',
 	    icon: image
 	});
 	image.url = 'images/breck.png';
-    	var breck = new google.maps.Marker({
+	var breck = new google.maps.Marker({
 	    position: breckLL,
 	    map: map,
 	    title: 'Breckenridge',
 	    icon: image
 	});
+	
 	image.url = 'images/vail.png';
-    	var vail = new google.maps.Marker({
+	var vail = new google.maps.Marker({
 	    position: vailLL,
 	    map: map,
 	    title: 'Vail',
 	    icon: image
 	});
 	image.url = 'images/beaver.jpg';
-    	var beaver = new google.maps.Marker({
+	var beaver = new google.maps.Marker({
 	    position: beaverLL,
 	    map: map,
 	    title: 'Beaver Creek',
 	    icon: image
 	});
+	
+	resorts = [abasin,keystone,breck,vail,beaver];
+	var infoWindow;
+	for(i in resorts) {
+		infowindow = new google.maps.InfoWindow({
+			content: resorts[i].title
+		});
+		resorts[i].addListener('click', function() {
+			infowindow.open(map, resorts[i]);
+		});
+	}
 	
 }
 
