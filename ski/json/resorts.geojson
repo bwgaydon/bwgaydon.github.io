@@ -3,31 +3,31 @@
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-105.871656, 39.642411]},
         "properties": {
-          "resortName": "abasin"
+          "resortName": "Arapahoe Basin"
         }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-105.941375, 39.605871]},
         "properties": {
-          "resortName": "keystone"
+          "resortName": "Keystone"
         }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-106.066885, 39.480504]},
         "properties": {
-          "resortName": "breck"
+          "resortName": "Breckenridge"
         }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-106.354909, 39.608681]},
         "properties": {
-          "resortName": "vail"
+          "resortName": "Vail"
         }
       },
       { "type": "Feature",
         "geometry": {"type": "Point", "coordinates": [-106.516630, 39.605010]},
         "properties": {
-          "resortName": "beaver"
+          "resortName": "Beaver Creek"
         }
       }
    ]
