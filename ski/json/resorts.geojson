@@ -1,0 +1,34 @@
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [39.642411, -105.871656]},
+        "properties": {
+          "resortName": "abasin"
+        }
+      },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [39.605871, -105.941375]},
+        "properties": {
+          "resortName": "keystone"
+        }
+      },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [39.480504, -106.066885]},
+        "properties": {
+          "resortName": "breck"
+        }
+      },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [39.608681, -106.354909]},
+        "properties": {
+          "resortName": "vail"
+        }
+      },
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [39.605010, -106.516630]},
+        "properties": {
+          "resortName": "beaver"
+        }
+      },
+       ]
+     }
