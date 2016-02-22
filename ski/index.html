@@ -61,7 +61,7 @@
                 Where's Good
             </div>
             <div id="nameplate">
-              <a href="/ski/json/resorts.geojson">Brian Gaydon</a>
+              <a href="http://bwgaydon.github.io">Brian Gaydon</a>
             </div>
         </div>
         <div id="content">
@@ -74,14 +74,18 @@
     <script src="ski_script.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
     <script>
-    L.mapbox.accessToken = 'pk.eyJ1IjoiYndnYXlkb24iLCJhIjoiY2lreWxtd3U5MDJzcnZvbTNyeHlod2ZqZSJ9.oLn2gLt8kJu05nLxYkMBEQ';
-    var map = L.mapbox.map('map', 'mapbox.streets')
-        .setView([39.567890,-106.1812467], 9);
+      L.mapbox.accessToken = 'pk.eyJ1IjoiYndnYXlkb24iLCJhIjoiY2lreWxtd3U5MDJzcnZvbTNyeHlod2ZqZSJ9.oLn2gLt8kJu05nLxYkMBEQ';
+      var map = L.mapbox.map('map', 'mapbox.streets')
+          .setView([39.567890,-106.1812467], 9);
+          
+      var featureLayer = L.mapbox.featureLayer()
+        .loadURL('/ski/json/resorts.geojson')
+        .addTo(map);
         
-    var featureLayer = L.mapbox.featureLayer()
-      .loadURL('/ski/json/resorts.geojson')
-      .addTo(map);
+      featureLayer.on('ready', function() {
+        map.fitBounds(featureLayer.getBounds());
+      });
     </script>
-
+    
   </body>
 </html>
