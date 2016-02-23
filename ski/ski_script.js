@@ -18,8 +18,15 @@ function initMap() {
     		map.fitBounds(featureLayer.getBounds());
 		});
 
-// Add features to the map.
-myLayer.setGeoJSON(geoJson);
+	// Add features to the map.
+	featureLayer.setGeoJSON(geoJson);
+	
+	featureLayer.on('mouseover', function(e) {
+	    e.layer.openPopup();
+	});
+	featureLayer.on('mouseout', function(e) {
+	    e.layer.closePopup();
+	});
 
 }
 
