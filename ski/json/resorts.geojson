@@ -5,7 +5,7 @@
         "properties": {
           "resortName": "Arapahoe Basin",
           "icon": {
-            "iconUrl": "images/abasin.jpg",
+            "iconUrl": "/ski/images/abasin.jpg",
             "iconSize": [50, 50],
             "iconAnchor": [25, 25],
             "popupAnchor": [0, -25]
@@ -17,7 +17,7 @@
         "properties": {
           "resortName": "Keystone",
           "icon": {
-            "iconUrl": "images/keystone.jpg",
+            "iconUrl": "/ski/images/keystone.jpg",
             "iconSize": [50, 50],
             "iconAnchor": [25, 25],
             "popupAnchor": [0, -25]
@@ -29,7 +29,7 @@
         "properties": {
           "resortName": "Breckenridge",
           "icon": {
-            "iconUrl": "images/breck.jpg",
+            "iconUrl": "/ski/images/breck.jpg",
             "iconSize": [50, 50],
             "iconAnchor": [25, 25],
             "popupAnchor": [0, -25]
@@ -41,7 +41,7 @@
         "properties": {
           "resortName": "Vail",
           "icon": {
-            "iconUrl": "images/vail.jpg",
+            "iconUrl": "/ski/images/vail.jpg",
             "iconSize": [50, 50],
             "iconAnchor": [25, 25],
             "popupAnchor": [0, -25]
@@ -53,7 +53,7 @@
         "properties": {
           "resortName": "Beaver Creek",
           "icon": {
-            "iconUrl": "images/abasin.jpg",
+            "iconUrl": "/ski/images/abasin.jpg",
             "iconSize": [50, 50],
             "iconAnchor": [25, 25],
             "popupAnchor": [0, -25]
