@@ -4,22 +4,20 @@ function initMap() {
       	var map = L.mapbox.map('map', 'mapbox.outdoors')
       		.setView([39.567890,-106.1812467], 1);
       		
-  		var featureLayer = L.mapbox.featureLayer()
+  	var featureLayer = L.mapbox.featureLayer()
 	        .loadURL('/ski/json/resorts.geojson')
 	        .addTo(map);
         
         featureLayer.on('layeradd', function(e) {
-    		var marker = e.layer,
-    		feature = marker.feature;
-		    marker.setIcon(L.icon(feature.properties.icon));
-		});
+		var marker = e.layer,
+		feature = marker.feature;
+		marker.setIcon(L.icon(feature.properties.icon));
+	});
         
-		featureLayer.on('ready', function() {
+	featureLayer.on('ready', function() {
     		map.fitBounds(featureLayer.getBounds());
-		});
+	});
 
-	// Add features to the map.
-	featureLayer.setGeoJSON(geoJson);
 	
 	featureLayer.on('mouseover', function(e) {
 	    e.layer.openPopup();
