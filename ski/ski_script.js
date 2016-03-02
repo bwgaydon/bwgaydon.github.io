@@ -5,7 +5,7 @@ function initMap() {
       		.setView([39.567890,-106.1812467], 1);
       		
   	var featureLayer = L.mapbox.featureLayer()
-	        .loadURL('/json/resorts.geojson')
+	        .loadURL('/ski/json/resorts.geojson')
 	        .addTo(map);
         
     featureLayer.on('layeradd', function(e) {
