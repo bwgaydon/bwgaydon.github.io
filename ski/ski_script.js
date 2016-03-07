@@ -1,80 +1,39 @@
-function contextSwitch(button) {
-    if (button.hasClass("selected")) return;
-    else {
-        /*
-        sidebar button selection:
-        1. remove selected from active
-        2. hide pane
-        3. add selected to button
-        4. show new pane
-        5. set active to new button
-        */
+function initMap() {
+	
+	L.mapbox.accessToken = 'pk.eyJ1IjoiYndnYXlkb24iLCJhIjoiY2lreWxtd3U5MDJzcnZvbTNyeHlod2ZqZSJ9.oLn2gLt8kJu05nLxYkMBEQ';
+      	var map = L.mapbox.map('map', 'mapbox.streets')
+      		.setView([39.567890,-106.1812467], 1);
+      		
+  	var featureLayer = L.mapbox.featureLayer()
+	        .loadURL('json/resorts.geojson')
+	        .addTo(map);
         
-        active.removeClass("selected");
-        document.getElementById(active[0].id.replace("_button", "")).style.display = "none";
-        button.addClass("selected");
-        document.getElementById(button[0].id.replace("_button", "")).style.display = "block";
-        active = button;
-        /*
-        if(active[0].id == "reports_button") $('#app_container').css("left","0px");
-        else $('#app_container').css("left","-120px");
-        */
-        
-        if(active[0].id == "reports_button") {
-            $('.app_button').each(function() {
-                $(this).css("left","120px");
-            });
-        }
-        else {
-            $('.app_button').each(function() {
-                $(this).css("left","0px");
-            });
-        }
-        
-    }
+    featureLayer.on('layeradd', function(e) {
+		var marker = e.layer,
+		feature = marker.feature;
+		marker.setIcon(L.icon(feature.properties.icon));
+		
+		var popupContent =  '<link href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//www.snow-forecast.com/resorts/Arapahoe-Basin/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><div style="clear: both;"></div></div></div>';
+
+    // http://leafletjs.com/reference.html#popup
+    marker.bindPopup(popupContent,{
+        closeButton: false,
+        minWidth: 499
+    });
+	});
+    
+	featureLayer.on('ready', function() {
+		map.fitBounds(featureLayer.getBounds());
+    	
+	});
+
 }
 
-//get "xyz" from "variable=xyz"
-function getQueryVariable(variable)
-{
-   var query = window.location.search.substring(1);
-   var vars = query.split("&");
-   for (var i=0;i<vars.length;i++) {
-       var pair = vars[i].split("=");
-       if(pair[0] == variable){return pair[1];}
-   }
-   return(false);
-}
 
 $(document).ready(function() {
-    //global variables
-    //view switches controlled via buttons
-    active = $("#metrics_button");
-    active.addClass("selected");
-    document.getElementById(active[0].id.replace("_button", "")).style.display = "block";
-
-    //set up menu buttonanimations
-    $(".menu_button").each(function() {
-        this.addEventListener("click", function() {
-            contextSwitch($(this));
-        });
-    });
-    //load app icons/URLs
-    //this requires each field in JSON be titled the same as the corresponding DOM element
-    appsObject = $.getJSON("/appdata/apps.json", function() {
-        $('.app_button').each(function() {
-            //$('#CRM')[0].style.backgroundImage = " url(' " + appsObject.responseJSON.CRM.appIcon + " ') ";
-            var first = "$('#" + this.id + "')[0].style.backgroundImage = ";
-            var second = '"' + "url('" + '"' + "+ appsObject.responseJSON." + this.id + ".appIcon + " + '"' + "')" + '"';
-            eval(first+second);
-        });
-    });
-
-    
-    //if redirect from oauth page, catch codes
-    if(window.location.search.substring(1) != "") {
-        var code = getQueryVariable("code");
-        console.log("code= " + code);
-    }
-    
+	
+	//epicMixWeather = $.getJSON("http://www.epicmix.com/vailresorts/sites/epicmix/api/mobile/weather.ashx");
+	
+	initMap();
+	
 });
