@@ -13,6 +13,7 @@ function contextSwitch(button) {
         active.removeClass("selected");
         document.getElementById(active[0].id.replace("_button", "")).style.opacity = 0;
         button.addClass("selected");
+        debugger;
         document.getElementById(button[0].id.replace("_button", "")).style.opacity = 1;
         active = button;
         
