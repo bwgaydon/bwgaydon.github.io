@@ -1,38 +1,82 @@
-<html lang="en">
 <head>
   <meta charset="utf-8">
+  
+  <title>CORE</title>
 
-  <title>Where's Good</title>
-  <meta name="description" content="Ski Hill Differentiator">
-  <meta name="author" content="Brian Gaydon">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-  <link rel="stylesheet" href="ski_styles.css">
-  <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
   
-  <link rel="manifest" href="json/manifest.json">
-  
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:900italic' rel='stylesheet' type='text/css'>
-  
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 </head>
-  <body>
-    <div id="container">
-        <div id="header">
-            <div id="header_title">
-                Where's Good
-            </div>
-            <div id="nameplate">
-              <a href="http://bwgaydon.github.io">Brian Gaydon</a>
-            </div>
-        </div>
-        <div id="content">
-            <div id="map">
+
+<body>
+  <div class="header">
+    <a href="http://corecloudapp.com">
+      <img class="header_icon" src="https://i.imgur.com/1b3nJn0.png" alt="core">
+    </a>
+  </div>
+  <div id="container">
+    <div id="sidebar">
+      <div id="metrics_button" class="menu_button">
+        Metrics
+      </div>
+      <div id="reports_button" class="menu_button">
+        Reports
+      </div>
+      <div id="settings_button" class="menu_button">
+        Settings
+      </div>
+      <div id="app_container">
+        <div id="sidebar_left">
+          <a href="https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9uudbyLbNPZM9tgYt1cA4yglnVMRyvCK01x2K8j3Qo1I.MkpK2mm8xTrBdwNPR8BG1HLN4S_5aRnwYPUc&client_secret=3910440158623989535&scope=full%20refresh_token&redirect_uri=https://bwgaydon.github.io/core/index.html&state=sfdc">
+            <div id="CRM" class="app_button">
 
             </div>
+          </a>
+          <a href="https://login.mailchimp.com/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fbwgaydon.github.io%2Fcore%2Findex.html&state=mailchimp3&client_id=627660219231">
+            <div id="marketing" class="app_button">
+
+            </div>
+          </a>
+          <a href="https://appcenter.intuit.com/Connect/Begin?oauth_token=qyprdvJhj3mdXIGNWgXPHSh6sQYf2b7wpOZzZVKQNmChzrSW&oauth_callback=https%3A%2F%2Fbwgaydon.github.io%2Fcore%2Findex.html%3Fstate%3Dquickbooks">
+            <div id="accounting" class="app_button">
+
+            </div>
+          </a>
         </div>
+        <div id="sidebar_right">
+          <a href="#">
+            <div id="support" class="app_button">
+
+            </div>
+          </a>
+          <a href="#">
+            <div id="ecommerce" class="app_button">
+
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="admin_button" class="menu_button">
+        Admin
+      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="ski_script.js"></script>
-    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
-    
-  </body>
-</html>
+    <div id="main">
+      <div class="pane" id="metrics">
+        
+      </div>
+      <div class="pane" id="reports">
+        
+      </div>
+      <div class="pane" id="settings">
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/charts.js"></script>
+</body>
