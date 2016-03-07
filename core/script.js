@@ -11,23 +11,29 @@ function contextSwitch(button) {
         */
         
         active.removeClass("selected");
-        document.getElementById(active[0].id.replace("_button", "")).style.display = "none";
+        document.getElementById(active[0].id.replace("_button", "")).style.opacity = 0;
         button.addClass("selected");
-        document.getElementById(button[0].id.replace("_button", "")).style.display = "block";
+        document.getElementById(button[0].id.replace("_button", "")).style.opacity = 1;
         active = button;
-        /*
-        if(active[0].id == "reports_button") $('#app_container').css("left","0px");
-        else $('#app_container').css("left","-120px");
-        */
         
+        //slide app icons in from left in aesthetic order
         if(active[0].id == "reports_button") {
+            var i = 0;
             $('.app_button').each(function() {
                 $(this).css("left","120px");
+                console.log($(this).css("transition-delay"));
+                $(this).css("transition-delay", i.toString() + "s");
+                i+=0.1;
             });
         }
+        //slide app icons out to left in aesthetic order
         else {
+            var i = 0.4;
             $('.app_button').each(function() {
                 $(this).css("left","0px");
+                console.log($(this).css("transition-delay"));
+                $(this).css("transition-delay", i.toString() + "s");
+                i-=0.1;
             });
         }
         
@@ -51,7 +57,7 @@ $(document).ready(function() {
     //view switches controlled via buttons
     active = $("#metrics_button");
     active.addClass("selected");
-    document.getElementById(active[0].id.replace("_button", "")).style.display = "block";
+    document.getElementById(active[0].id.replace("_button", "")).style.opacity = 1;
 
     //set up menu buttonanimations
     $(".menu_button").each(function() {
