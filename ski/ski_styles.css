@@ -1,62 +1,167 @@
-html,
+html * {
+  font-family: 'Lato', Arial, sans-serif !important;
+}
 body {
-    margin: 0;
-    height: 100%;
-    font-family: "Merriweather", sans-serif;
-    font-size:30px;
+  overflow: hidden;
+  margin:0;
+}
+a {
+  width:20px;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55px;
+  margin: auto;
+  background-color: #503571;
+}
+.header_icon {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 55px;
+  width: auto;
 }
 
 #container {
-    position: relative;
-    display: block;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-#header {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 2.25rem;
-    line-height: 2.25rem;
-    background-color: #00B0EB;
-    color: #FFFFFF;
+#sidebar {
+  position:relative;
+  width: 120px;
+  height:100%;
+}
+#app_container {
+  position:relative;
+  left:-120px;
+  width: 100%;
+  float:left;
+}
+#sidebar_left {
+  margin-top:5px;
+  width:48%;
+  float: left;
+}
+#sidebar_right {
+  margin-top:35px;
+  width:48%;
+  float:right;
+}
+.menu_button {
+  position: relative;
+  display:inline-block;
+  padding-left: 0px;
+  float: left;
+  clear: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: sans-serif;
+  color: #503571;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #FFFFFF;
+  cursor: pointer;
+  transition: padding-left 0.5s ease;;
+}
+.menu_button:focus {
+  padding-left: 15px;
+}
+#admin_button {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  height: 41px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  background-color: #503571;
+  border: 0;
+}
+.selected {
+  background-color: #d5c8e5 !important;
+  padding-left: 10px !important;
 }
 
-#header_title {
-    display:inline-block;
-    float:left;
-    margin-left: 1em;
+.app_button {
+  position: relative;
+  left:0px;
+  z-index:1;
+  display:inline-block;
+  padding-left: 0px;
+  width: 100%;
+  height:60px;
+  margin:0;
+  vertical-align: middle;
+  cursor: pointer;
+  background-position:center center;
+  background-size:90% auto;
+  background-repeat:no-repeat;
+  transition: background-size 0.3s ease, left 0.5s ease;
+}
+.app_button:hover {
+  background-size:100%;
+}
+.app_slider {
+  position:relative;
+  z-index:0;
+  display:inline-block;
+  height:100%;
+  width:100%;
+  padding-left:10px;
 }
 
-#nameplate {
-    font-size: 0.75em;
-    display:inline-block;
-    float:right;
-    margin-right: 1em;
+#CRM {
+  transition-delay:0s;
 }
-#nameplate a {
-    color:#FFFFFF;
-    text-decoration: none;
+#marketing {
+  transition-delay:0.1s;
 }
-
-#content {
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: calc(100% - 2.5rem);
-    background-color: #FAFAFA;
-    overflow:hidden;    //fix child margin issue
+#accounting {
+  transition-delay:0.2s;
+}
+#support {
+  transition-delay:0.3s;
+}
+#ecommerce {
+  transition-delay:0.4s;
 }
 
-#map {
-    position: relative;
-    display: block;
-    margin:auto;
-    width: 100%;
-    height: 100%;
+#main {
+  z-index:-1;
+  position:absolute;
+  margin: 1em;
+  margin-right: 1em;
+  top:0px;
+  left:120px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+}
+.pane {
+  display:none;
+  position:absolute;
+  width:100%;
+  height:100%;
+  font-size:5rem;
+}
+#metrics {
+  
+}
+#reports {
+  
+}
+#settings {
+  
 }
