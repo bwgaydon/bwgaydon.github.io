@@ -1,13 +1,40 @@
 function contextSwitch(button) {
     if (button.hasClass("selected")) return;
     else {
-        currentMenu.toggleClass("selected");
-        button.toggleClass("selected");
-        currentMenu = button;
+        /*
+        sidebar button selection:
+        1. remove selected from active
+        2. hide pane
+        3. add selected to button
+        4. show new pane
+        5. set active to new button
+        */
+        
+        active.removeClass("selected");
+        document.getElementById(active[0].id.replace("_button", "")).style.display = "none";
+        button.addClass("selected");
+        document.getElementById(button[0].id.replace("_button", "")).style.display = "block";
+        active = button;
+        /*
+        if(active[0].id == "reports_button") $('#app_container').css("left","0px");
+        else $('#app_container').css("left","-120px");
+        */
+        
+        if(active[0].id == "reports_button") {
+            $('.app_button').each(function() {
+                $(this).css("left","120px");
+            });
+        }
+        else {
+            $('.app_button').each(function() {
+                $(this).css("left","0px");
+            });
+        }
+        
     }
 }
 
-//get xyz from "variable=xyz"
+//get "xyz" from "variable=xyz"
 function getQueryVariable(variable)
 {
    var query = window.location.search.substring(1);
@@ -21,8 +48,10 @@ function getQueryVariable(variable)
 
 $(document).ready(function() {
     //global variables
-    currentMenu = $("#metrics_button");
-    currentMenu.addClass("selected");
+    //view switches controlled via buttons
+    active = $("#metrics_button");
+    active.addClass("selected");
+    document.getElementById(active[0].id.replace("_button", "")).style.display = "block";
 
     //set up menu buttonanimations
     $(".menu_button").each(function() {
@@ -30,6 +59,17 @@ $(document).ready(function() {
             contextSwitch($(this));
         });
     });
+    //load app icons/URLs
+    //this requires each field in JSON be titled the same as the corresponding DOM element
+    appsObject = $.getJSON("/appdata/apps.json", function() {
+        $('.app_button').each(function() {
+            //$('#CRM')[0].style.backgroundImage = " url(' " + appsObject.responseJSON.CRM.appIcon + " ') ";
+            var first = "$('#" + this.id + "')[0].style.backgroundImage = ";
+            var second = '"' + "url('" + '"' + "+ appsObject.responseJSON." + this.id + ".appIcon + " + '"' + "')" + '"';
+            eval(first+second);
+        });
+    });
+
     
     //if redirect from oauth page, catch codes
     if(window.location.search.substring(1) != "") {
