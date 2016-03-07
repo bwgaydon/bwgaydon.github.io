@@ -69,9 +69,19 @@ $(document).ready(function() {
     //this requires each field in JSON be titled the same as the corresponding DOM element
     appsObject = $.getJSON("/appdata/apps.json", function() {
         $('.app_button').each(function() {
-            //$('#CRM')[0].style.backgroundImage = " url(' " + appsObject.responseJSON.CRM.appIcon + " ') ";
+            /*
+            $('#'+this.id)[0].style.backgroundImage = " url('" + appsObject.responseJSON["this.id"].appIcon + "') ";
+            /*/
             var first = "$('#" + this.id + "')[0].style.backgroundImage = ";
             var second = '"' + "url('" + '"' + "+ appsObject.responseJSON." + this.id + ".appIcon + " + '"' + "')" + '"';
+            eval(first+second);
+            
+            //eval("$(this).parent()[0].href = appsObject.responseJSON." + this.id + ".appURL");
+        });
+        $('.s_app').each(function() {
+            //$('#s_marketing')[0].style.backgroundImage = " url(' " + appsObject.responseJSON.marketing.appIcon + " ') ";
+            var first = "$('#" + this.id + "')[0].style.backgroundImage = ";
+            var second = '"' + "url('" + '"' + "+ appsObject.responseJSON." + this.id.replace("s_","") + ".appIcon + " + '"' + "')" + '"';
             eval(first+second);
         });
     });
