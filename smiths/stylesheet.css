@@ -1,0 +1,133 @@
+body {
+    margin:0%;
+    background-color:#655643;
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+a {
+    text-decoration:none;
+    color:#000000;
+}
+a:hover {
+    font-weight:bold;
+}
+#header {
+    position:relative;
+    width:100%;
+    height:auto;
+    font-size:3rem;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px #F6F7BD;
+    padding:1rem;
+    padding-left:2rem;
+    background-color:#80BCA3;
+}
+nav {
+    
+}
+#container {
+    width:95%;
+    height:100%;
+    margin-top:2rem;
+    margin-left:2%;
+    margin-right:auto;
+    background-color:#BF4D28;
+}
+#sidebar {
+    font-size:1.2rem;
+    float:left;
+    width:16%;
+    height:auto;
+    padding:2%;
+    background-color:#F6F7BD;
+    border-radius:1px;
+}
+#sidebar h4 {
+    margin-top:1em;
+    margin-bottom:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    border-bottom:1px solid #BF4D28;
+}
+#sidebar ul {
+    padding-left:10px;
+}
+#sidebar li {
+    list-style-type:none;
+    margin-bottom:0.3em;
+}
+#main {
+    position:relative;
+    float:right;
+    width:72%;
+    height:auto;
+    padding:2%;
+    background-color:#F6F7BD;
+}
+#headline {
+    width:auto;
+    height:auto;
+    margin-bottom:2rem;
+    font-size:2.5rem;
+    padding:1rem;
+    background-color:#E6AC27;
+    color:#F0F0F0;
+    text-align:center;
+    border-radius:3px;
+}
+#main_container {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#main_container:first-child {
+    background-image:url("http://media2.fdncms.com/thecoast/imager/best-health-food-store/u/zoom/1679599/planet-organic.jpg");
+}
+.item {
+    margin-bottom:1rem;
+    height:250px;
+    background-color:#BF4D28;
+}
+.half {
+    width:49.5%;
+}
+.third {
+    width:33%;
+}
+.twothirds {
+    width:66%;
+}
+.full {
+    width:100%;
+    clear:both;
+}
+.left {
+    float:left;
+    clear:left;
+}
+.right {
+    float:right;
+    clear:right;
+}
+#footer {
+    float:right;
+    clear:both;
+    width:100%;
+    height:auto;
+    padding:1em;
+    text-align:center;
+    color:#F6F7BD;
+    background-color:#80BCA3;
+}
+.button {
+    font-size:1.5rem;
+    padding:0.5em;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:3px;
+    text-align:center;
+    background-color:#BF4D28;
+    color:#F0F0F0;
+}
