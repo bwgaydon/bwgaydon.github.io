@@ -38,8 +38,8 @@ height: auto;
   top left: 0px;
   display: block;
   width: 100%;
-  height: auto;
   color:#F0F0F0;
+  overflow:auto;
 }
 .col {
   text-align:center;
