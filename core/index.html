@@ -1,13 +1,13 @@
 <head>
   <meta charset="utf-8">
-  
+
   <title>CORE</title>
 
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  
+
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 </head>
@@ -26,12 +26,12 @@
       <div id="reports_button" class="menu_button">
         Reports
       </div>
-      <div id="settings_button" class="menu_button">
+      <div id="settings_button" class="menu_button selected">
         Settings
       </div>
       <div id="app_container">
         <div id="sidebar_left">
-          <a href="https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9uudbyLbNPZM9tgYt1cA4yglnVMRyvCK01x2K8j3Qo1I.MkpK2mm8xTrBdwNPR8BG1HLN4S_5aRnwYPUc&client_secret=3910440158623989535&scope=full%20refresh_token&redirect_uri=https://bwgaydon.github.io/core/index.html&state=sfdc">
+          <a href="#">
             <div id="CRM" class="app_button">
 
             </div>
@@ -66,23 +66,52 @@
     </div>
     <div id="main">
       <div class="pane" id="metrics">
-        
+
       </div>
       <div class="pane" id="reports">
-        
+
       </div>
       <div class="pane" id="settings">
-        <h2>Applications</h2>
-        <div id="s_applist">
-          <div class="s_app" id="s_CRM"></div>
-          <div class="s_app" id="s_marketing"></div>
-          <div class="s_app" id="s_accounting"></div>
-          <div class="s_app" id="s_support"></div>
-          <div class="s_app" id="s_ecommerce"></div>
-        </div>
+        <h2>User Settings</h2>
+        <ul class="wrapper">
+          <li>
+            <p>User 1</p>
+            <div class="s_item"></div>
+          </li>
+          <li>
+            <p>User 2</p>
+            <div class="s_item"></div>
+          </li>
+          <li>
+            <p>User 3</p>
+            <div class="s_item"></div>
+          </li>
+        </ul>
       </div>
       <div class="pane" id="admin">
-        
+        <h2>Applications</h2>
+        <ul class="wrapper">
+          <li>
+            <p>CRM</p>
+            <div class="a_item" id="s_CRM"></div>
+          </li>
+          <li>
+            <p>Marketing</p>
+            <div class="a_item" id="s_marketing"></div>
+          </li>
+          <li>
+            <p>Accounting</p>
+            <div class="a_item" id="s_accounting"></div>
+          </li>
+          <li>
+            <p>Support</p>
+            <div class="a_item" id="s_support"></div>
+          </li>
+          <li>
+            <p>Ecommerce</p>
+            <div class="a_item" id="s_ecommerce"></div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
