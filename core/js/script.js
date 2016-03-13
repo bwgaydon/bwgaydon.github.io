@@ -9,11 +9,13 @@ function contextSwitch(button) {
         4. show new pane
         5. set active to new button
         */
-        
         active.removeClass("selected");
         document.getElementById(active[0].id.replace("_button", "")).style.opacity = 0;
+        document.getElementById(active[0].id.replace("_button", "")).style.zIndex = 0;
+
         button.addClass("selected");
         document.getElementById(button[0].id.replace("_button", "")).style.opacity = 1;
+        document.getElementById(button[0].id.replace("_button", "")).style.zIndex = 2;
         active = button;
         
         //slide app icons in from left in aesthetic order
@@ -22,7 +24,7 @@ function contextSwitch(button) {
             $('.app_button').each(function() {
                 $(this).css("left","120px");
                 console.log($(this).css("transition-delay"));
-                $(this).css("transition-delay", i.toString() + "s");
+                $(this).css("transition-delay", "0s," + i.toString() + "s");
                 i+=0.1;
             });
         }
@@ -32,7 +34,7 @@ function contextSwitch(button) {
             $('.app_button').each(function() {
                 $(this).css("left","0px");
                 console.log($(this).css("transition-delay"));
-                $(this).css("transition-delay", i.toString() + "s");
+                $(this).css("transition-delay", "0s," + i.toString() + "s");
                 i-=0.1;
             });
         }
@@ -55,11 +57,11 @@ function getQueryVariable(variable)
 $(document).ready(function() {
     //global variables
     //view switches controlled via buttons
-    active = $("#metrics_button");
-    active.addClass("selected");
+    active = $('.selected')
     document.getElementById(active[0].id.replace("_button", "")).style.opacity = 1;
+    document.getElementById(active[0].id.replace("_button", "")).style.zIndex = 2;
 
-    //set up menu buttonanimations
+    //set up menu button animations
     $(".menu_button").each(function() {
         this.addEventListener("click", function() {
             contextSwitch($(this));
@@ -67,7 +69,7 @@ $(document).ready(function() {
     });
     //load app icons/URLs
     //this requires each field in JSON be titled the same as the corresponding DOM element
-    appsObject = $.getJSON("/core/appdata/apps.json", function() {
+    appsObject = $.getJSON("/appdata/apps.json", function() {
         $('.app_button').each(function() {
             /*
             $('#'+this.id)[0].style.backgroundImage = " url('" + appsObject.responseJSON["this.id"].appIcon + "') ";
@@ -78,7 +80,7 @@ $(document).ready(function() {
             
             //eval("$(this).parent()[0].href = appsObject.responseJSON." + this.id + ".appURL");
         });
-        $('.s_app').each(function() {
+        $('.a_item').each(function() {
             //$('#s_marketing')[0].style.backgroundImage = " url(' " + appsObject.responseJSON.marketing.appIcon + " ') ";
             var first = "$('#" + this.id + "')[0].style.backgroundImage = ";
             var second = '"' + "url('" + '"' + "+ appsObject.responseJSON." + this.id.replace("s_","") + ".appIcon + " + '"' + "')" + '"';
