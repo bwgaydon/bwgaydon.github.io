@@ -7,7 +7,8 @@
       "coordinates": [-105.871656, 39.642411]
     },
     "properties": {
-      "title": "Arapahoe Basin",
+      "name": "Arapahoe Basin",
+      "urlName": "Arapahoe-Basin",
       "icon": {
         "iconUrl": "/ski/images/abasin.jpg",
         "iconSize": [50, 50],
@@ -22,7 +23,8 @@
       "coordinates": [-105.941375, 39.605871]
     },
     "properties": {
-      "title": "Keystone-Resort",
+      "name": "Keystone",
+      "urlName": "Keystone-Resort",
       "icon": {
         "iconUrl": "/ski/images/keystone.jpg",
         "iconSize": [50, 50],
@@ -37,7 +39,8 @@
       "coordinates": [-106.066885, 39.480504]
     },
     "properties": {
-      "title": "Breckenridge",
+      "name": "Breckenridge",
+      "urlName": "Breckenridge",
       "icon": {
         "iconUrl": "/ski/images/breck.png",
         "iconSize": [50, 50],
@@ -52,7 +55,8 @@
       "coordinates": [-106.354909, 39.608681]
     },
     "properties": {
-      "title": "Vail",
+      "name": "Vail",
+      "urlName": "Vail",
       "icon": {
         "iconUrl": "/ski/images/vail.png",
         "iconSize": [50, 50],
@@ -67,7 +71,8 @@
       "coordinates": [-106.516630, 39.605010]
     },
     "properties": {
-      "title": "Beaver Creek",
+      "name": "Beaver Creek",
+      "urlName": "Beaver-Creek",
       "icon": {
         "iconUrl": "/ski/images/beaver.jpg",
         "iconSize": [50, 50],
