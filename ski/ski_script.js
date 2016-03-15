@@ -13,7 +13,7 @@ function initMap() {
 		feature = marker.feature;
 		marker.setIcon(L.icon(feature.properties.icon));
 		
-		var popupContent =  '<link href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//www.snow-forecast.com/resorts/Arapahoe-Basin/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><div style="clear: both;"></div></div></div>';
+		var popupContent =  '<link href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="//www.snow-forecast.com/resorts/' + feature.properties.title + '/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><div style="clear: both;"></div></div></div>';
 
     // http://leafletjs.com/reference.html#popup
     marker.bindPopup(popupContent,{
