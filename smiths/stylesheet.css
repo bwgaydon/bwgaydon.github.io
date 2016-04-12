@@ -19,7 +19,7 @@ a:hover {
     height:auto;
     font-size:3rem;
     font-family: 'Pacifico', cursive;
-    text-shadow: 1px 1px #F6F7BD;
+    text-shadow: 1px 1px #F6F7DD;
     padding:1rem;
     padding-left:2rem;
     background-color:#80BCA3;
@@ -41,7 +41,7 @@ nav {
     width:16%;
     height:auto;
     padding:2%;
-    background-color:#F6F7BD;
+    background-color:#F6F7DD;
     border-radius:1px;
 }
 #sidebar h4 {
@@ -64,7 +64,7 @@ nav {
     width:72%;
     height:auto;
     padding:2%;
-    background-color:#F6F7BD;
+    background-color:#F6F7DD;
 }
 #headline {
     width:auto;
