@@ -22,7 +22,7 @@
             "coordinates": [-111.556015, 40.686149]
         },
         "properties": {
-            "title": "Canyons at Park City",
+            "title": "The Canyons",
             "icon": {
                 "iconUrl": "/images/canyons.jpg",
                 "iconSize": [50, 50],
@@ -52,7 +52,7 @@
             "coordinates": [-111.584798, 40.598431]
         },
         "properties": {
-            "title": "Brighton",
+            "title": "Brighton Resort",
             "icon": {
                 "iconUrl": "/images/brighton.png",
                 "iconSize": [72, 50],
