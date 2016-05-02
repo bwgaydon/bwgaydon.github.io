@@ -7,7 +7,7 @@
             "coordinates": [-119.940536,38.934611]
         },
         "properties": {
-            "title": "Heavenly",
+            "title": "Heavenly Ski",
             "icon": {
                 "iconUrl": "/images/heavenly.png",
                 "iconSize": [50, 50],
@@ -37,7 +37,7 @@
             "coordinates": [-120.065371,38.684825]
         },
         "properties": {
-            "title": "Kirkwood",
+            "title": "Kirkwood Mountain",
             "icon": {
                 "iconUrl": "/images/kirkwood.png",
                 "iconSize": [50, 50],
@@ -52,7 +52,7 @@
             "coordinates": [-120.235465,39.195452]
         },
         "properties": {
-            "title": "Squaw Valley",
+            "title": "Squaw Valley USA",
             "icon": {
                 "iconUrl": "/images/squaw.jpeg",
                 "iconSize": [50, 50],
@@ -82,7 +82,7 @@
             "coordinates": [-120.120804,39.274979]
         },
         "properties": {
-            "title": "Northstar",
+            "title": "Northstar at Tahoe",
             "icon": {
                 "iconUrl": "/images/northstar.jpeg",
                 "iconSize": [50, 50],
@@ -97,7 +97,7 @@
             "coordinates": [-119.885375,39.328435]
         },
         "properties": {
-            "title": "Mt. Rose",
+            "title": "Mt Rose Ski Tahoe",
             "icon": {
                 "iconUrl": "/images/mtrose.jpg",
                 "iconSize": [50, 50],
