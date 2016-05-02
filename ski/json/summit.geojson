@@ -8,9 +8,8 @@
     },
     "properties": {
       "title": "Arapahoe Basin",
-      "urlTitle": "Arapahoe-Basin",
       "icon": {
-        "iconUrl": "/ski/images/abasin.jpg",
+        "iconUrl": "/images/abasin.jpg",
         "iconSize": [50, 50],
         "iconAnchor": [25, 25],
         "popupAnchor": [0, -25]
@@ -23,10 +22,9 @@
       "coordinates": [-105.941375, 39.605871]
     },
     "properties": {
-      "title": "Keystone",
-      "urlTitle": "Keystone-Resort",
+      "title": "Keystone Resort",
       "icon": {
-        "iconUrl": "/ski/images/keystone.jpg",
+        "iconUrl": "/images/keystone.jpg",
         "iconSize": [50, 50],
         "iconAnchor": [25, 25],
         "popupAnchor": [0, -25]
@@ -40,9 +38,8 @@
     },
     "properties": {
       "title": "Breckenridge",
-      "urlTitle": "Breckenridge",
       "icon": {
-        "iconUrl": "/ski/images/breck.png",
+        "iconUrl": "/images/breck.png",
         "iconSize": [50, 50],
         "iconAnchor": [25, 25],
         "popupAnchor": [0, -25]
@@ -56,9 +53,8 @@
     },
     "properties": {
       "title": "Vail",
-      "urlTitle": "Vail",
       "icon": {
-        "iconUrl": "/ski/images/vail.png",
+        "iconUrl": "/images/vail.png",
         "iconSize": [50, 50],
         "iconAnchor": [25, 25],
         "popupAnchor": [0, -25]
@@ -72,9 +68,38 @@
     },
     "properties": {
       "title": "Beaver Creek",
-      "urlTitle": "Beaver-Creek",
       "icon": {
-        "iconUrl": "/ski/images/beaver.jpg",
+        "iconUrl": "/images/beaver.jpg",
+        "iconSize": [50, 50],
+        "iconAnchor": [25, 25],
+        "popupAnchor": [0, -25]
+      }
+    }
+  }, {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-106.155934, 39.500028]
+    },
+    "properties": {
+      "title": "Copper Mountain",
+      "icon": {
+        "iconUrl": "/images/copper.jpg",
+        "iconSize": [50, 50],
+        "iconAnchor": [25, 25],
+        "popupAnchor": [0, -25]
+      }
+    }
+  }, {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-105.895946, 39.680278]
+    },
+    "properties": {
+      "title": "Loveland",
+      "icon": {
+        "iconUrl": "/images/loveland.jpg",
         "iconSize": [50, 50],
         "iconAnchor": [25, 25],
         "popupAnchor": [0, -25]
