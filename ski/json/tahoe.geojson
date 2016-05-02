@@ -1,0 +1,124 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.940536,38.934611]
+        },
+        "properties": {
+            "title": "Heavenly",
+            "icon": {
+                "iconUrl": "/images/heavenly.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.080673,38.800261]
+        },
+        "properties": {
+            "title": "Sierra-at-Tahoe",
+            "icon": {
+                "iconUrl": "/images/sierra.png",
+                "iconSize": [100, 45],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.065371,38.684825]
+        },
+        "properties": {
+            "title": "Kirkwood",
+            "icon": {
+                "iconUrl": "/images/kirkwood.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.235465,39.195452]
+        },
+        "properties": {
+            "title": "Squaw Valley",
+            "icon": {
+                "iconUrl": "/images/squaw.jpeg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.238766,39.164520]
+        },
+        "properties": {
+            "title": "Alpine Meadows",
+            "icon": {
+                "iconUrl": "/images/alpine.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.120804,39.274979]
+        },
+        "properties": {
+            "title": "Northstar",
+            "icon": {
+                "iconUrl": "/images/northstar.jpeg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.885375,39.328435]
+        },
+        "properties": {
+            "title": "Mt. Rose",
+            "icon": {
+                "iconUrl": "/images/mtrose.jpg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-120.333229,39.305468]
+        },
+        "properties": {
+            "title": "Sugar Bowl",
+            "icon": {
+                "iconUrl": "/images/sugarbowl.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }]
+}
