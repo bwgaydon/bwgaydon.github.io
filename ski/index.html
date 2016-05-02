@@ -5,10 +5,8 @@
   <title>Where's Good</title>
   <meta name="description" content="Ski Hill Differentiator">
   <meta name="author" content="Brian Gaydon">
-  
-  <link rel="icon" href="http://icons.iconarchive.com/icons/aha-soft/standard-new-year/128/Snowflake-icon.png">
 
-  <link rel="stylesheet" href="ski_styles.css">
+  <link rel="stylesheet" href="css/ski_styles.css">
   <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet'>
   
   <link rel="manifest" href="json/manifest.json">
@@ -17,23 +15,35 @@
   
 </head>
   <body>
-    <div id="container">
-        <div id="header">
-            <div id="header_title">
-                Where's Good
-            </div>
-            <div id="nameplate">
-              <a href="http://bwgaydon.github.io">Brian Gaydon</a>
-            </div>
-        </div>
-        <div id="content">
-            <div id="map">
-              
-            </div>
-        </div>
+    <div id="area_choice">
+      <div id="summit" class="button">
+        Summit County, CO
+      </div>
+      <div id="wasatch" class="button">
+        Wasatch, Utah
+      </div>
+      <div id="tahoe" class="button">
+        Lake Tahoe, CA
+      </div>
     </div>
+    <div id="container">
+      <div id="header">
+          <div id="header_title">
+              Where's Good
+          </div>
+          <div id="nameplate">
+            <a href="http://bwgaydon.github.io">Brian Gaydon</a>
+          </div>
+      </div>
+      <div id="content">
+          <div id="map">
+
+          </div>
+      </div>
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="ski_script.js"></script>
+    <script src="js/ski_script.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
     
   </body>
