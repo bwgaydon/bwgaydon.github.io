@@ -1,0 +1,109 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.508291, 40.651080]
+        },
+        "properties": {
+            "title": "Park City",
+            "icon": {
+                "iconUrl": "/images/pcmr.jpg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.556015, 40.686149]
+        },
+        "properties": {
+            "title": "Canyons at Park City",
+            "icon": {
+                "iconUrl": "/images/canyons.jpg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.478320, 40.637380]
+        },
+        "properties": {
+            "title": "Deer Valley",
+            "icon": {
+                "iconUrl": "/images/deervalley.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.584798, 40.598431]
+        },
+        "properties": {
+            "title": "Brighton",
+            "icon": {
+                "iconUrl": "/images/brighton.png",
+                "iconSize": [72, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.591880, 40.619819]
+        },
+        "properties": {
+            "title": "Solitude",
+            "icon": {
+                "iconUrl": "/images/solitude.jpg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.628950, 40.590832]
+        },
+        "properties": {
+            "title": "Alta",
+            "icon": {
+                "iconUrl": "/images/alta.jpg",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }, {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-111.656772, 40.58104]
+        },
+        "properties": {
+            "title": "Snowbird",
+            "icon": {
+                "iconUrl": "/images/snowbird.png",
+                "iconSize": [50, 50],
+                "iconAnchor": [25, 25],
+                "popupAnchor": [0, -25]
+            }
+        }
+    }]
+}
