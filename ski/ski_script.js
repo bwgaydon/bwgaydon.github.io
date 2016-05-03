@@ -4,7 +4,7 @@ function initMap(area) {
       	var map = L.mapbox.map('map', 'mapbox.streets');
       		
   	var featureLayer = L.mapbox.featureLayer()
-	        .loadURL('/json/'+ area +'.geojson')
+	        .loadURL('/ski/json/'+ area +'.geojson')
 	        .addTo(map);
         
     featureLayer.on('layeradd', function(e) {
