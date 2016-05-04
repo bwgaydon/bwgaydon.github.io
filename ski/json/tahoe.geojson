@@ -9,7 +9,7 @@
         "properties": {
             "title": "Heavenly Ski",
             "icon": {
-                "iconUrl": "/images/heavenly.png",
+                "iconUrl": "/ski/images/heavenly.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -24,7 +24,7 @@
         "properties": {
             "title": "Sierra-at-Tahoe",
             "icon": {
-                "iconUrl": "/images/sierra.png",
+                "iconUrl": "/ski/images/sierra.png",
                 "iconSize": [100, 45],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -39,7 +39,7 @@
         "properties": {
             "title": "Kirkwood Mountain",
             "icon": {
-                "iconUrl": "/images/kirkwood.png",
+                "iconUrl": "/ski/images/kirkwood.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -54,7 +54,7 @@
         "properties": {
             "title": "Squaw Valley USA",
             "icon": {
-                "iconUrl": "/images/squaw.jpeg",
+                "iconUrl": "/ski/images/squaw.jpeg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -69,7 +69,7 @@
         "properties": {
             "title": "Alpine Meadows",
             "icon": {
-                "iconUrl": "/images/alpine.png",
+                "iconUrl": "/ski/images/alpine.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -84,7 +84,7 @@
         "properties": {
             "title": "Northstar at Tahoe",
             "icon": {
-                "iconUrl": "/images/northstar.jpeg",
+                "iconUrl": "/ski/images/northstar.jpeg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -99,7 +99,7 @@
         "properties": {
             "title": "Mt Rose Ski Tahoe",
             "icon": {
-                "iconUrl": "/images/mtrose.jpg",
+                "iconUrl": "/ski/images/mtrose.jpg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -114,7 +114,7 @@
         "properties": {
             "title": "Sugar Bowl",
             "icon": {
-                "iconUrl": "/images/sugarbowl.png",
+                "iconUrl": "/ski/images/sugarbowl.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
