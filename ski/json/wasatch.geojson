@@ -9,7 +9,7 @@
         "properties": {
             "title": "Park City",
             "icon": {
-                "iconUrl": "/images/pcmr.jpg",
+                "iconUrl": "/ski/images/pcmr.jpg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -24,7 +24,7 @@
         "properties": {
             "title": "The Canyons",
             "icon": {
-                "iconUrl": "/images/canyons.jpg",
+                "iconUrl": "/ski/images/canyons.jpg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -39,7 +39,7 @@
         "properties": {
             "title": "Deer Valley",
             "icon": {
-                "iconUrl": "/images/deervalley.png",
+                "iconUrl": "/ski/images/deervalley.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -54,7 +54,7 @@
         "properties": {
             "title": "Brighton Resort",
             "icon": {
-                "iconUrl": "/images/brighton.png",
+                "iconUrl": "/ski/images/brighton.png",
                 "iconSize": [72, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -69,7 +69,7 @@
         "properties": {
             "title": "Solitude",
             "icon": {
-                "iconUrl": "/images/solitude.jpg",
+                "iconUrl": "/ski/images/solitude.jpg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -84,7 +84,7 @@
         "properties": {
             "title": "Alta",
             "icon": {
-                "iconUrl": "/images/alta.jpg",
+                "iconUrl": "/ski/images/alta.jpg",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
@@ -99,7 +99,7 @@
         "properties": {
             "title": "Snowbird",
             "icon": {
-                "iconUrl": "/images/snowbird.png",
+                "iconUrl": "/ski/images/snowbird.png",
                 "iconSize": [50, 50],
                 "iconAnchor": [25, 25],
                 "popupAnchor": [0, -25]
