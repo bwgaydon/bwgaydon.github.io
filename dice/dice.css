@@ -7,10 +7,15 @@
 }
 
 #app #header {
+	background-color:#ececec;
 	grid-column:1 / 2;
 	grid-row:1 / 1;
+	grid-area:header;
 }
 
 #app #sidebar {
-
+	background-color:#90ccf4;
+	grid-column:1 / 1;
+	grid-row:1 / 2;
+	grid-area:sidebar;
 }
