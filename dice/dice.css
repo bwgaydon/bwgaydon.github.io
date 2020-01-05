@@ -22,7 +22,7 @@
 }
 
 #app #sidebar li {
-	text-decoration:none;
+	list-style:none;
 }
 
 #app #sidebar li a {
