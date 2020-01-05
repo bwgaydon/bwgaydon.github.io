@@ -2,7 +2,7 @@ new Vue({
   el: '#app',
   data: {
 	  header: {
-	    message: 'Hello Vue.js!'
+	    image: "images/meow.png"
 	  },
 	  sidebar: {
 	  	items: [
