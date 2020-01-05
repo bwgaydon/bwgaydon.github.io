@@ -4,6 +4,7 @@
 	height:100vh;
 	grid-template-columns: 200px auto;
 	grid-template-rows: 100px auto;
+	font-family:Roboto,Arial,sans-serif;
 }
 
 #app #header {
@@ -18,4 +19,12 @@
 	grid-column:1;
 	grid-row:2 / 3;
 	/*grid-area:sidebar;*/
+}
+
+#app #sidebar li {
+	text-decoration:none;
+}
+
+#app #sidebar li a {
+	text-decoration:none;
 }
