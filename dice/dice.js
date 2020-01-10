@@ -45,11 +45,11 @@ new Vue({
 			this.formData.excludedWeapons = [];
 		},
 		excludeAllWeapons: function() {
-			weaponData.forEach(function(element) {
-				if(!this.formData.excludedWeapons.includes(element.weaponName)) {
-					this.formData.excludedWeapons.push(element.weaponName);
+			for(var i=0;i<weaponData.length;i++) {
+				if(!this.formData.excludedWeapons.includes(weaponData[i].weaponName)) {
+					this.formData.excludedWeapons.push(weaponData[i].weaponName);
 				}
-			})
+			}
 		},
 		//UNDER DEVELOPMENT
 		removeWeaponType: function(category) {
