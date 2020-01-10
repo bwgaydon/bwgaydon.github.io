@@ -8,7 +8,9 @@ new Vue({
 	  weaponData: weaponData,
 	  formData: {
 	  	weaponCount:1,
-	  	weaponTypes:["melee","ranged","traps","shields"]
+	  	weaponTypes:[]
+	  	minWeaponCost:0;
+	  	maxWeaponCost:500;
 	  },
 	  chosenWeapons:[]
 	},
@@ -21,7 +23,7 @@ new Vue({
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 				
 				if(this.formData.weaponTypes.length > 0) {
-					while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType) || weaponsArray.includes(candidateWeapon)) {
+					while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType) || weaponsArray.includes(candidateWeapon) || candidateWeapon.weaponCost < this.formData.minWeaponCost || candidateWeapon.weaponCost > this.formData.maxWeaponCost) {
 						candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 					}
 				}

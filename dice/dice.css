@@ -74,6 +74,12 @@ body {
 	border-radius:5px;
 }
 
+#app #sidebar .sidebar-block .weapon-choice-block {
+	display:block;
+	border:1px solid #a0a0a0;
+	border-radius:3px;
+}
+
 #app #sidebar .sidebar-block fieldset {
 	display:block;
 	width:100%;
@@ -159,6 +165,7 @@ body {
 	display:inline-block;
 	width:276px;
 	height:276px;
+	padding:16px;
 	background-color:#f0f0f0;
 	border-radius:5px;
 	text-align:center;

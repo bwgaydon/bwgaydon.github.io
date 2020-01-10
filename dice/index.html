@@ -32,6 +32,17 @@
 						<label for="weapon-choice-5" id="weapon-count-5" class="weapon-count-label">5</label>
 					</fieldset>
 				</div>
+
+				<div class="sidebar-block" v-if="formData.weaponCount > 0">
+					<div class="weapon-choice-block"
+					v-for="(weapon,index) in weaponCount">
+						<fieldset>
+							<legend>Weapon {{index}}</legend>
+							<label v-bind:for="'weapon-cost-' + index">Weapon {{index}}
+							<input type="range" min="1" max="100" value="50" class="cost-slider" v-bind:id="'weapon-cost-' + index">
+					</div>
+				</div>
+
 				<div class="sidebar-block">
 					<fieldset>
 						<legend class="include-header">Weapon Types:</legend>
