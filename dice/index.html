@@ -51,7 +51,8 @@
 
 		<div id="main">
 			<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="weapon in chosenWeapons">
-				{{weapon}}
+				<h3 class="weapon-name">{{weapon.weaponName}}</h3>
+				<p class="weapon-cost">{{weapon.weaponCost}} moneys</p>
 			</div>
 		</div>
 

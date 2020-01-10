@@ -105,6 +105,10 @@ body {
 	cursor:pointer;
 }
 
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label * {
+	opacity:1;
+}
+
 #app #sidebar .sidebar-block fieldset input[type="radio"] + label:hover,
 #app #sidebar .sidebar-block fieldset input[type="radio"] + label:focus,
 #app #sidebar .sidebar-block fieldset input[type="radio"]:focus + label {
@@ -156,8 +160,41 @@ body {
 	display:inline-block;
 	width:200px;
 	height:200px;
-	margin-right:8px;
+	margin-right:16px;
 	background-color:#f0f0f0;
 	border-radius:5px;
 	text-align:center;
+	opacity:0.3;
+}
+
+#app #main .weapon-item:nth-child(1) {
+	background-color:#fecd21;
+}
+#app #main .weapon-item:nth-child(2) {
+	background-color:#f19a4b;
+}
+#app #main .weapon-item:nth-child(3) {
+	background-color:#c66c41;
+}
+#app #main .weapon-item:nth-child(4) {
+	background-color:#a83838;
+}
+#app #main .weapon-item:nth-child(5) {
+	background-color:#831f1f;
+}
+
+#app #main .weapon-item * {
+	opacity:1;
+}
+
+#app #main .weapon-item
+
+#app #main .weapon-item .weapon-name {
+	font-size:40px;
+	font-weight:500;
+}
+
+#app #main .weapon-item .weapon-cost {
+	font-size:24px;
+	font-weight:400;
 }
