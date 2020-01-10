@@ -68,8 +68,8 @@
 		<div class="sidebar-block">
 			<fieldset>
 				<legend class="sidebar-header">Exclude?
-			<input type="checkbox" class="weapon-tag-input" v-for="(weapon, index) in weaponData" v-bind:id="'weapon-tag-' + index"/>
-			<label class="weapon-tag" v-bind:for="'weapon-tag-' + index">{{weapon.weaponName}}</label>
+			<input type="checkbox" class="weapon-tag-input" v-for="weapon in weaponData" v-model="weapon.weaponName"/>
+			<label class="weapon-tag">{{weapon.weaponName}}</label>
 		</div>
 
 		<div id="main">

@@ -12,6 +12,7 @@ new Vue({
 	  	minWeaponCost:[],
 	  	maxWeaponCost:[]
 	  },
+	  excludedWeapons:[],
 	  chosenWeapons:[]
 	},
 	methods: {
