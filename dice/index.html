@@ -10,46 +10,48 @@
 
 	<div id="app">
 
-	  <div id="header">
-	  	<img id="header-img"/>
-	  	<h1 class="header-title">{{header.title}}</h1>
-	  </div>
+		<div id="header">
+			<img id="header-img"/>
+			<h1 class="header-title">{{header.title}}</h1>
+		</div>
 
-	  <div id="sidebar">
-	  	<div class="sidebar-block">
-	  		<fieldset>
-	  			<legend class="weapon-count-header">Number of Weapons</legend>
-	  			<input type="radio" id="weapon-choice-1" class="weapon-count-button"/>
-	  			<label for="weapon-choice-1" class="weapon-count-label">1</label>
-	  			<input type="radio" id="weapon-choice-2" class="weapon-count-button"/>
-	  			<label for="weapon-choice-2" class="weapon-count-label">2</label>
-	  			<input type="radio" id="weapon-choice-3" class="weapon-count-button"/>
-	  			<label for="weapon-choice-3" class="weapon-count-label">3</label>
-	  			<input type="radio" id="weapon-choice-4" class="weapon-count-button"/>
-	  			<label for="weapon-choice-4" class="weapon-count-label">4</label>
-	  			<input type="radio" id="weapon-choice-5" class="weapon-count-button"/>
-	  			<label for="weapon-choice-5" class="weapon-count-label">5</label>
-	  		</fieldset>
-	  	</div>
-  		<div class="sidebar-block">
-  			<fieldset>
-	  			<legend class="include-header">Include:</legend>
-	  			<input id="include-melee" class="sidebar-item-input" type="checkbox"/>
-	  			<label for="include-melee" class="include-type-label">Melee</label>
-	  			<input id="include-ranged" class="sidebar-item-input" type="checkbox"/>
-	  			<label for="include-ranged" class="include-type-label">Ranged</label>
-	  			<input id="include-traps" class="sidebar-item-input" type="checkbox"/>
-	  			<label for="include-traps" class="include-type-label">Traps</label>
-	  			<input id="include-shields" class="sidebar-item-input" type="checkbox"/>
-	  			<label for="include-shields" class="include-type-label">Shields</label>
-	  		</fieldset>
-  		</div>
-	  </div>
+		<div id="sidebar">
+			<form name="weapon-options-form">
+				<div class="sidebar-block">
+					<fieldset>
+						<legend class="weapon-count-header">Number of Weapons</legend>
+						<input type="radio" id="weapon-choice-1" class="weapon-count-button"/>
+						<label for="weapon-choice-1" class="weapon-count-label">1</label>
+						<input type="radio" id="weapon-choice-2" class="weapon-count-button"/>
+						<label for="weapon-choice-2" class="weapon-count-label">2</label>
+						<input type="radio" id="weapon-choice-3" class="weapon-count-button"/>
+						<label for="weapon-choice-3" class="weapon-count-label">3</label>
+						<input type="radio" id="weapon-choice-4" class="weapon-count-button"/>
+						<label for="weapon-choice-4" class="weapon-count-label">4</label>
+						<input type="radio" id="weapon-choice-5" class="weapon-count-button"/>
+						<label for="weapon-choice-5" class="weapon-count-label">5</label>
+					</fieldset>
+				</div>
+				<div class="sidebar-block">
+					<fieldset>
+						<legend class="include-header">Include:</legend>
+						<input id="include-melee" class="include-checkbox" type="checkbox"/>
+						<label for="include-melee" class="include-type-label">Melee</label>
+						<input id="include-ranged" class="include-checkbox" type="checkbox"/>
+						<label for="include-ranged" class="include-type-label">Ranged</label>
+						<input id="include-traps" class="include-checkbox" type="checkbox"/>
+						<label for="include-traps" class="include-type-label">Traps</label>
+						<input id="include-shields" class="include-checkbox" type="checkbox"/>
+						<label for="include-shields" class="include-type-label">Shields</label>
+					</fieldset>
+				</div>
+			</form>
+		</div>
 
-	  <div id="main">
-	  	<label>Number of Enemies</label>
-	  	<input/>
-	  </div>
+		<div id="main">
+			<div>
+			</div>
+		</div>
 
 	</div>
 
