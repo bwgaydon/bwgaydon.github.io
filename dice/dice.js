@@ -19,7 +19,8 @@ new Vue({
 		randomizeWeapons: function(weaponCount) {
 			// console.log('weaponCount: ',weaponCount);
 			// console.log('weaponData: ',weaponData);
-			console.log('weaponTypes: ',this.formData.weaponTypes);
+			//console.log('weaponTypes: ',this.formData.weaponTypes);
+			console.log('list of excluded weapons: ',this.formData.excludedWeapons);
 			var weaponsArray = [];
 			for(var i=0;i<weaponCount;i++) {
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
@@ -35,8 +36,8 @@ new Vue({
 			this.chosenWeapons = weaponsArray;
 		},
 		clearExcludedWeapons: function() {
-			console.log('list of excluded weapons before deletion: ',this.formData.excludedWeapons);
-			this.formData.excludedWeapons = [];
+			
+			this.formData.excludedWeapons = []
 		}
 	}
 })
