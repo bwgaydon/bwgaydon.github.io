@@ -35,13 +35,13 @@
 				<div class="sidebar-block">
 					<fieldset>
 						<legend class="include-header">Weapon Types:</legend>
-						<input id="include-melee" class="include-checkbox" type="checkbox" value="true"/>
+						<input id="include-melee" class="include-checkbox" type="checkbox" value="true" v-model="formData.weaponsTypes"/>
 						<label for="include-melee" class="include-type-label">Melee</label>
-						<input id="include-ranged" class="include-checkbox" type="checkbox" value="true"/>
+						<input id="include-ranged" class="include-checkbox" type="checkbox" value="true" v-model="formData.weaponsTypes"/>
 						<label for="include-ranged" class="include-type-label">Ranged</label>
-						<input id="include-traps" class="include-checkbox" type="checkbox" value="true"/>
+						<input id="include-traps" class="include-checkbox" type="checkbox" value="true" v-model="formData.weaponsTypes"/>
 						<label for="include-traps" class="include-type-label">Traps</label>
-						<input id="include-shields" class="include-checkbox" type="checkbox" value="true"/>
+						<input id="include-shields" class="include-checkbox" type="checkbox" value="true" v-model="formData.weaponsTypes"/>
 						<label for="include-shields" class="include-type-label">Shields</label>
 					</fieldset>
 				</div>
