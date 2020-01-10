@@ -35,7 +35,7 @@
 
 				<div class="sidebar-block" v-if="formData.weaponCount > 0">
 					<div class="weapon-choice-block"
-					v-for="(weapon, index) in weaponCount">
+					v-for="(weapon, index) in formData.weaponCount">
 						<fieldset>
 							<legend>Weapon {{index}}</legend>
 							<label v-bind:for="'weapon-cost-' + index">Min Weapon Cost
