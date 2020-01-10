@@ -25,7 +25,7 @@ new Vue({
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 				
 				if(this.formData.weaponTypes.length > 0) {
-					while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType) || weaponsArray.includes(candidateWeapon)) {
+					while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType) || weaponsArray.includes(candidateWeapon) || this.formData.excludedWeapons.includes(candidateWeapon.weaponName)) {
 						candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 					}
 				}
