@@ -1,6 +1,3 @@
-import json from './weaponData.json';
-
-
 new Vue({
   el: '#app',
   data: {
@@ -8,6 +5,6 @@ new Vue({
 	  	title: "Mordhau Weapon Randomizer"
 	    image: "images/meow.png"
 	  },
-	  weaponData: json
+	  weaponData: weaponData
 	}
 })

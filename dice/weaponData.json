@@ -1,4 +1,4 @@
-[
+var weaponData = [
   {
     "weaponName": "Maul",
     "weaponCost": 350,
