@@ -20,7 +20,7 @@ new Vue({
 			for(var i=0;i<weaponCount;i++) {
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 				while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType)) {
-					var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
+					candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
 				}
 				weaponsArray.push(candidateWeapon);
 			}
