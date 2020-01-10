@@ -23,9 +23,9 @@ new Vue({
 			console.log('list of excluded weapons: ',this.formData.excludedWeapons);
 			var weaponsArray = [];
 
-			if(weaponData.length - this.formData.excludedWeapons.length < this.formData.weaponCount) {
+			if(this.weaponTypes.length === 0) {
 				alert('Not enough weapons');
-			} else if(this.weaponTypes.length === 0) {
+			} else if(weaponData.length - this.formData.excludedWeapons.length < this.formData.weaponCount) {
 				alert('Please select at least one weapon type');
 			} else {
 				var weaponCount = this.formData.weaponCount;
@@ -56,6 +56,7 @@ new Vue({
 		},
 
 		//IN DEVELOPMENT
+		//probably bad idea because of case where check category then do individual ones
 		// includeWeaponType: function(type) {
 		// 	for(var i=0;i<this.formData.excludedWeapons.length;i++) {
 		// 		if(this.formData.excludedWeapons[i].weaponType == type) {
