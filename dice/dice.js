@@ -44,6 +44,7 @@ new Vue({
 		clearExcludedWeapons: function() {
 			this.formData.excludedWeapons = [];
 		},
+
 		excludeAllWeapons: function() {
 			for(var i=0;i<weaponData.length;i++) {
 				if(!this.formData.excludedWeapons.includes(weaponData[i].weaponName)) {
@@ -51,6 +52,7 @@ new Vue({
 				}
 			}
 		},
+
 		//IN DEVELOPMENT
 		includeWeaponType: function(type) {
 			for(var i=0;i<this.formData.excludedWeapons.length;i++) {
@@ -59,6 +61,7 @@ new Vue({
 				}
 			}
 		},
+
 		excludeWeaponType: function(type) {
 			for(var i=0;i<weaponData.length;i++) {
 				if(weaponData[i].weaponType == type) {
@@ -68,12 +71,16 @@ new Vue({
 				}
 			}
 		},
-		toggleWeaponType: function(e,type) {
-			// if(e.target.checked) {
-			// 	this.includeWeaponType(type);
-			// } else {
-			// 	this.excludeWeaponType(type);
-			// }
+
+		updateWeaponTypes: function(e,type) {
+			var weaponTypeArray = ["melee","ranged","traps","shields"];
+			weaponTypeArray.forEach((type) => {
+				if(!this.weaponTypes.contains(type)) {
+					excludeWeaponType(type);
+				} else {
+					includeWeaponType(type);
+				}
+			})
 		}
 	}
 })
