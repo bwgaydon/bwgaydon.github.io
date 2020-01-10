@@ -65,8 +65,9 @@
 					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag">{{weapon.weaponName}}</label>
 				</div>
 				<div class="exclude-button-block">
-					<button class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
-					<button class="exclude-all" v-on:click="excludeAllWeapons">Exclude All</button>
+					<button type="button" class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
+					<button type="button" class="exclude-all" v-on:click="excludeAllWeapons">Exclude All</button>
+					butts
 				</div>
 			</fieldset>
 
