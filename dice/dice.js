@@ -23,4 +23,4 @@ new Vue({
 			this.chosenWeapons = weaponsArray;
 		}
 	}
-}
+})
