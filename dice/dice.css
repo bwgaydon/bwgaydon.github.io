@@ -1,3 +1,14 @@
+/*
+colors
+yellow:	#fecd21;
+orange: #f19a4b;
+darkorange: #c66c41;
+red: 	#a83838;
+darkred: #831f1f;
+*/body {
+	margin:0;
+}
+
 #app {
 	display:grid;
 	width:100vw;
@@ -11,6 +22,12 @@
 #app div,
 #app fieldset {
 	box-sizing:border-box;
+}
+
+#app button {
+	outline:none;
+	border:none;
+	text-align:center;
 }
 
 #app #header {
@@ -37,6 +54,7 @@
 	background-color:#FFFFFF;
 	grid-column:1;
 	grid-row:2 / 3;
+	border-right: 1px solid #a0a0a0;
 	text-align:center;
 	overflow:auto;
 }
@@ -67,11 +85,50 @@
 	height:40px;
 	border-radius:5px;
 	border:none;
-	font-weight:500px;
+	font-weight:500;
+	opacity:0.6;
+}
+
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label:hover,
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label:focus {
+	box-shadow:0 2px 2px 0;
+}
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label:active,
+#app #sidebar .sidebar-block fieldset input[type="radio"]:selected + label {
+	opacity:1;
+}
+
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label.weapon-count-1 {
+	background-color:#fecd21;
+}
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label.weapon-count-2 {
+	background-color:#f19a4b;
+}
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label.weapon-count-3 {
+	background-color:#c66c41;
+}
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label.weapon-count-4 {
+	background-color:#a83838;
+}
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label.weapon-count-5 {
+	background-color:#831f1f;
+}
+
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label:not(last-of-type) {
+	margin-right:20px;
+}
+
+#app #sidebar #sidebar-submit-button {
+	width:50%;
+	margin-top:32px;
+	padding:32px;
+	font-size:24px;
+	font-weight:500;
 }
 
 #app #main {
 	grid-column:2 / 3;
 	grid-row:2 / 3;
 	text-align:center;
+	padding:100px 0 0 150px;
 }
