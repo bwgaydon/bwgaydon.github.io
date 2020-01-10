@@ -2,20 +2,55 @@
 <head>
 	<!-- development version, includes helpful console warnings -->
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="dice.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<div id="app">
+
 	  <div id="header">
 	  	<img id="header-img"/>
+	  	<h1 class="header-title">{{header.title}}</h1>
 	  </div>
+
 	  <div id="sidebar">
-	  	<ul>
-	  		<li v-for="item in sidebar.items">
-	  			<a v-bind:href="item.linkAddress">{{item.linkText}}</a>
-	  		</li>
+	  	<div class="sidebar-block">
+	  		<fieldset>
+	  			<legend class="weapon-count-header">Number of Weapons</legend>
+	  			<input type="radio" id="weapon-choice-1" class="weapon-count-button"/>
+	  			<label for="weapon-choice-1" class="weapon-count-label">1</label>
+	  			<input type="radio" id="weapon-choice-2" class="weapon-count-button"/>
+	  			<label for="weapon-choice-2" class="weapon-count-label">2</label>
+	  			<input type="radio" id="weapon-choice-3" class="weapon-count-button"/>
+	  			<label for="weapon-choice-3" class="weapon-count-label">3</label>
+	  			<input type="radio" id="weapon-choice-4" class="weapon-count-button"/>
+	  			<label for="weapon-choice-4" class="weapon-count-label">4</label>
+	  			<input type="radio" id="weapon-choice-5" class="weapon-count-button"/>
+	  			<label for="weapon-choice-5" class="weapon-count-label">5</label>
+	  		</fieldset>
+	  	</div>
+  		<div class="sidebar-block">
+  			<fieldset>
+	  			<legend class="include-header">Include:</legend>
+	  			<input id="include-melee" class="sidebar-item-input" type="checkbox"/>
+	  			<label for="include-melee" class="include-type-label">Melee</label>
+	  			<input id="include-ranged" class="sidebar-item-input" type="checkbox"/>
+	  			<label for="include-ranged" class="include-type-label">Ranged</label>
+	  			<input id="include-traps" class="sidebar-item-input" type="checkbox"/>
+	  			<label for="include-traps" class="include-type-label">Traps</label>
+	  			<input id="include-shields" class="sidebar-item-input" type="checkbox"/>
+	  			<label for="include-shields" class="include-type-label">Shields</label>
+	  		</fieldset>
+  		</div>
 	  </div>
+
+	  <div id="main">
+	  	<label>Number of Enemies</label>
+	  	<input/>
+	  </div>
+
 	</div>
 
 	<script src="dice.js"></script>

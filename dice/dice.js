@@ -1,24 +1,13 @@
+import json from './weaponData.json';
+
+
 new Vue({
   el: '#app',
   data: {
 	  header: {
+	  	title: "Mordhau Weapon Randomizer"
 	    image: "images/meow.png"
 	  },
-	  sidebar: {
-	  	items: [
-	  	{
-	  		linkText:"First",
-	  		linkAddress:"http://google.com"
-	  	},
-	  	{
-	  		linkText:"Second",
-	  		linkAddress:"http://yahoo.com"
-	  	},
-	  	{
-	  		linkText:"Third",
-	  		linkAddress:"http://bing.com"
-	  	}
-	  	]
-	  }
+	  weaponData: json
 	}
 })

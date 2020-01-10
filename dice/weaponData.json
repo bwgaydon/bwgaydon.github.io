@@ -1,0 +1,278 @@
+[
+  {
+    "weaponName": "Maul",
+    "weaponCost": 350,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Executioner's Sword",
+    "weaponCost": 200,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "War Axe",
+    "weaponCost": 150,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Bardiche",
+    "weaponCost": 300,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Halberd",
+    "weaponCost": 500,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Sledgehammer",
+    "weaponCost": 0,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Zweihander",
+    "weaponCost": 400,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Eveningstar",
+    "weaponCost": 200,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Battle Axe",
+    "weaponCost": 0,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Heavy Handaxe",
+    "weaponCost": 200,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Spear",
+    "weaponCost": 425,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Greatsword",
+    "weaponCost": 250,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Messer",
+    "weaponCost": 175,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Scythe",
+    "weaponCost": 95,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Pole Axe",
+    "weaponCost": 250,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Longsword",
+    "weaponCost": 150,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Estoc",
+    "weaponCost": 250,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Billhook",
+    "weaponCost": 100,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Falchion",
+    "weaponCost": 80,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Bastard Sword",
+    "weaponCost": 110,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Mace",
+    "weaponCost": 50,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Short Spear",
+    "weaponCost": 150,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Arming Sword",
+    "weaponCost": 60,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Axe",
+    "weaponCost": 50,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Warhammer",
+    "weaponCost": 75,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Rapier",
+    "weaponCost": 80,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Short Sword",
+    "weaponCost": 30,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Rusty Fork",
+    "weaponCost": 50,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Dagger",
+    "weaponCost": 20,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Hoe",
+    "weaponCost": 15,
+    "weaponHands": 2,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Blacksmith Hammer",
+    "weaponCost": 30,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Quarterstaff",
+    "weaponCost": 0,
+    "weaponHands": 0,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Wooden Mallet",
+    "weaponCost": 25,
+    "weaponHands": 1,
+    "weaponType": "melee"
+  },
+  {
+    "weaponName": "Recurve Bow",
+    "weaponCost": 100,
+    "weaponHands": 2,
+    "weaponType": "ranged"
+  },
+  {
+    "weaponName": "Longbow",
+    "weaponCost": 200,
+    "weaponHands": 2,
+    "weaponType": "ranged"
+  },
+  {
+    "weaponName": "Crossbow",
+    "weaponCost": 150,
+    "weaponHands": 2,
+    "weaponType": "ranged"
+  },
+  {
+    "weaponName": "Throwing Knives",
+    "weaponCost": 30,
+    "weaponHands": 1,
+    "weaponType": "ranged"
+  },
+  {
+    "weaponName": "Throwing Axes",
+    "weaponCost": 50,
+    "weaponHands": 1,
+    "weaponType": "ranged"
+  },
+  {
+    "weaponName": "Fire Bomb",
+    "weaponCost": 100,
+    "weaponHands": 1,
+    "weaponType": "trap"
+  },
+  {
+    "weaponName": "Toolbox",
+    "weaponCost": 150,
+    "weaponHands": 2,
+    "weaponType": "trap"
+  },
+  {
+    "weaponName": "Bear Trap",
+    "weaponCost": 10,
+    "weaponHands": 2,
+    "weaponType": "trap"
+  },
+  {
+    "weaponName": "Buckler",
+    "weaponCost": 30,
+    "weaponHands": 1,
+    "weaponType": "shield"
+  },
+  {
+    "weaponName": "Heater Shield",
+    "weaponCost": 125,
+    "weaponHands": 1,
+    "weaponType": "shield"
+  },
+  {
+    "weaponName": "Kite Shield",
+    "weaponCost": 200,
+    "weaponHands": 1,
+    "weaponType": "shield"
+  },
+  {
+    "weaponName": "Pavise Shield",
+    "weaponCost": 130,
+    "weaponHands": 2,
+    "weaponType": "shield"
+  },
+  {
+    "weaponName": "Targe",
+    "weaponCost": 50,
+    "weaponHands": 1,
+    "weaponType": "shield"
+  }
+]
