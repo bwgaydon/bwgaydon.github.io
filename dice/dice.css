@@ -15,7 +15,7 @@ body {
 	display:grid;
 	width:100vw;
 	height:100vh;
-	grid-template-columns: 320px auto;
+	grid-template-columns: 360px auto;
 	grid-template-rows: 100px auto;
 	font-family:Rubik,Arial,sans-serif;
 	font-weight:400;
@@ -85,7 +85,9 @@ body {
 }
 
 #app #sidebar .sidebar-block fieldset input[type="radio"] {
-	display:none;
+	opacity:0;
+	position:absolute;
+	width:0;
 }
 
 #app #sidebar .sidebar-block fieldset input[type="radio"] + label {
@@ -101,11 +103,12 @@ body {
 }
 
 #app #sidebar .sidebar-block fieldset input[type="radio"] + label:hover,
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label:focus {
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label:focus,
+#app #sidebar .sidebar-block fieldset input[type="radio"]:focus + label {
 	box-shadow:2px 2px 0 0;
 }
 #app #sidebar .sidebar-block fieldset input[type="radio"] + label:active,
-#app #sidebar .sidebar-block fieldset input[type="radio"]:selected + label {
+#app #sidebar .sidebar-block fieldset input[type="radio"]:checked + label {
 	opacity:1;
 }
 
