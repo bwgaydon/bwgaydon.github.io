@@ -72,6 +72,7 @@ body {
 	padding:16px;
 	background-color:#ffffff;
 	border-radius:5px;
+	border:none;
 }
 
 #app #sidebar .sidebar-block .weapon-choice-block {
@@ -80,25 +81,17 @@ body {
 	border-radius:3px;
 }
 
-#app #sidebar .sidebar-block fieldset {
-	display:block;
-	width:100%;
-	border:none;
-	padding:0;
-	margin:0;
-}
-
-#app #sidebar .sidebar-block fieldset legend {
+#app #sidebar .sidebar-block  legend {
 	margin-bottom:16px;
 }
 
-#app #sidebar .sidebar-block fieldset input[type="radio"] {
+#app #sidebar .sidebar-block  input[type="radio"] {
 	opacity:0;
 	position:absolute;
 	width:0;
 }
 
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label {
+#app #sidebar .sidebar-block  input[type="radio"] + label {
 	display:inline-block;
 	text-align:center;
 	width:40px;
@@ -111,33 +104,33 @@ body {
 	cursor:pointer;
 }
 
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label:hover,
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label:focus,
-#app #sidebar .sidebar-block fieldset input[type="radio"]:focus + label {
+#app #sidebar .sidebar-block  input[type="radio"] + label:hover,
+#app #sidebar .sidebar-block  input[type="radio"] + label:focus,
+#app #sidebar .sidebar-block  input[type="radio"]:focus + label {
 	box-shadow:2px 2px 0 0 ;
 }
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label:active,
-#app #sidebar .sidebar-block fieldset input[type="radio"]:checked + label {
+#app #sidebar .sidebar-block  input[type="radio"] + label:active,
+#app #sidebar .sidebar-block  input[type="radio"]:checked + label {
 	opacity:1;
 }
 
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label#weapon-count-1 {
+#app #sidebar .sidebar-block  input[type="radio"] + label#weapon-count-1 {
 	background-color:#fecd21;
 }
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label#weapon-count-2 {
+#app #sidebar .sidebar-block  input[type="radio"] + label#weapon-count-2 {
 	background-color:#f19a4b;
 }
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label#weapon-count-3 {
+#app #sidebar .sidebar-block  input[type="radio"] + label#weapon-count-3 {
 	background-color:#c66c41;
 }
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label#weapon-count-4 {
+#app #sidebar .sidebar-block  input[type="radio"] + label#weapon-count-4 {
 	background-color:#a83838;
 }
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label#weapon-count-5 {
+#app #sidebar .sidebar-block  input[type="radio"] + label#weapon-count-5 {
 	background-color:#831f1f;
 }
 
-#app #sidebar .sidebar-block fieldset input[type="radio"] + label:not(:last-child) {
+#app #sidebar .sidebar-block  input[type="radio"] + label:not(:last-child) {
 	margin-right:20px;
 }
 
