@@ -6,6 +6,9 @@ new Vue({
 	    image: "images/meow.png"
 	  },
 	  weaponData: weaponData,
-	  weaponCount:0
+	  formData: {
+	  	weaponCount:0,
+	  	weaponTypes:[]
+	  }
 	}
 })
