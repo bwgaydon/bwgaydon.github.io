@@ -165,13 +165,13 @@ body {
 	opacity:1;
 }
 
-#app #sidebar .sidebar-block .weapon-tag:nth-child(n+12) {
+#app #sidebar .sidebar-block .weapon-tag-wrapper:nth-child(n+12) .weapon-tag {
 	background-color:#f19a4b;
 }
-#app #sidebar .sidebar-block .weapon-tag:nth-child(n+24) {
+#app #sidebar .sidebar-block .weapon-tag-wrapper:nth-child(n+24) .weapon-tag {
 	background-color:#c66c41;
 }
-#app #sidebar .sidebar-block .weapon-tag:nth-child(n+36) {
+#app #sidebar .sidebar-block .weapon-tag-wrapper:nth-child(n+36) .weapon-tag {
 	background-color:#a83838;
 }
 
