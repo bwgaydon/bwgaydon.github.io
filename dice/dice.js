@@ -5,6 +5,7 @@ new Vue({
 	  	title: "Mordhau Weapon Randomizer",
 	    image: "images/meow.png"
 	  },
-	  weaponData: weaponData
+	  weaponData: weaponData,
+	  weaponCount:0
 	}
 })
