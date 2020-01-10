@@ -170,10 +170,12 @@ body {
 	padding:8px 32px;
 }
 
-#app #sidebar .sidebar-block .clear-exclude {
+#app #sidebar .sidebar-block button.clear-exclude,
+#app #sidebar .sidebar-block button.exclude-all {
 	background-color:#d0d0d0;
 	border-radius:3px;
 	display: inline-block;
+	padding:4px;
 }
 
 #app #sidebar .sidebar-block .weapon-tag-input:checked + .weapon-tag {
