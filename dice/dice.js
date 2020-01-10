@@ -25,6 +25,8 @@ new Vue({
 
 			if(weaponData.length - this.formData.excludedWeapons.length < this.formData.weaponCount) {
 				alert('Not enough weapons');
+			} else if(this.weaponTypes.length === 0) {
+				alert('Please select at least one weapon type');
 			} else {
 				var weaponCount = this.formData.weaponCount;
 				for(var i=0;i<weaponCount;i++) {
