@@ -147,7 +147,8 @@ body {
 	padding:24px;
 	font-size:24px;
 	font-weight:500;
-	background-color:#a83838;
+	background-color:#FFFFFF;
+	border:4px solid #a83838;
 	border-radius:5px;
 }
 
