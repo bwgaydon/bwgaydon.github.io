@@ -30,12 +30,6 @@ var weaponData = [
     "weaponType": "melee"
   },
   {
-    "weaponName": "Sledgehammer",
-    "weaponCost": 0,
-    "weaponHands": 0,
-    "weaponType": "melee"
-  },
-  {
     "weaponName": "Zweihander",
     "weaponCost": 400,
     "weaponHands": 2,
