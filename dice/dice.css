@@ -41,10 +41,10 @@ body {
 	padding:10px;
 }
 
-#app #header #header-img {
+#app #header #header-icon {
 	display:inline-block;
 	height:80px;
-	width:auto;
+	width:80px;
 }
 
 #app #header #header-title {
