@@ -50,7 +50,7 @@
 		</div>
 
 		<div id="main">
-			<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="(weapon, index) in formData.weaponCount">
+			<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="weapon in chosenWeapons">
 				{{weapon}}
 			</div>
 		</div>
