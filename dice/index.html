@@ -31,7 +31,6 @@
 						<input type="radio" v-model="formData.weaponCount" id="weapon-choice-5"/>
 						<label for="weapon-choice-5" id="weapon-count-5" class="weapon-count-label">5</label>
 					</fieldset>
-					<button v-on:click="console.log(formData.weaponCount)">Test Form Data</button>
 				</div>
 				<div class="sidebar-block">
 					<fieldset>
@@ -52,6 +51,7 @@
 
 		<div id="main">
 			<div>
+				{{formData.weaponCount}}
 			</div>
 		</div>
 
