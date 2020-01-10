@@ -38,10 +38,10 @@
 					v-for="(weapon, index) in formData.weaponCount">
 						<fieldset>
 							<legend>Weapon {{index}}</legend>
-							<label v-bind:for="'weapon-cost-' + index">Min Weapon Cost
-							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-cost-' + index" v-model="formData.minWeaponCost[index]">
-							<label v-bind:for="'weapon-cost-' + index">Max Weapon Cost
-							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-cost-' + index" v-model="formData.maxWeaponCost[index]">
+							<label v-bind:for="'weapon-mincost-' + index">Min Weapon Cost
+							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-mincost-' + index" v-model="formData.minWeaponCost[index]">
+							<label v-bind:for="'weapon-maxcost-' + index">Max Weapon Cost
+							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-maxcost-' + index" v-model="formData.maxWeaponCost[index]">
 					</div>
 				</div>
 
