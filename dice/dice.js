@@ -13,14 +13,13 @@ new Vue({
 	  chosenWeapons:[]
 	},
 	methods: {
-		randomWeapon: function(weaponCount) {
-			console.log('randomWeapon: ',weaponData[Math.floor(Math.random() * weaponData.length)]);
+		randomizeWeapons: function(weaponCount) {
+			
 			var weaponsArray = [];
 			for(var i=0;i<weaponCount;i++) {
 				weaponsArray.push(weaponData[Math.floor(Math.random() * weaponData.length)]);
 			}
+			console.log('randomizeWeapons: ',weaponsArray);
 		}
-})
-
-
+	}
 }
