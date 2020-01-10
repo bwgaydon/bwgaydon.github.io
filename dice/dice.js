@@ -70,9 +70,9 @@ new Vue({
 		},
 		toggleWeaponType: function(e,type) {
 			if(e.target.checked) {
-				includeWeaponType(type);
+				this.includeWeaponType(type);
 			} else {
-				excludeWeaponType(type);
+				this.excludeWeaponType(type);
 			}
 		}
 	}
