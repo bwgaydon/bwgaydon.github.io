@@ -88,10 +88,12 @@ body {
 	margin:0;
 }
 
-#app #sidebar .sidebar-block legend {
+#app #sidebar .sidebar-block fieldset legend {
 	margin-bottom:16px;
 	font-weight:500;
 	font-size:24px;
+    float: left;
+    width: 100%;
 }
 
 #app #sidebar .sidebar-block  input[type="radio"] {
