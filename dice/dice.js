@@ -77,7 +77,7 @@ new Vue({
 		updateWeaponTypes: function(e,type) {
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			weaponTypeArray.forEach((type) => {
-				if(!this.weaponTypes.contains(type)) {
+				if(!this.weaponTypes.includes(type)) {
 					excludeWeaponType(type);
 				} else {
 					includeWeaponType(type);
