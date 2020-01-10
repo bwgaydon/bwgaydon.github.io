@@ -33,6 +33,10 @@ new Vue({
 				weaponsArray.push(candidateWeapon);
 			}
 			this.chosenWeapons = weaponsArray;
+		},
+		clearExcludedWeapons: function() {
+			console.log('list of excluded weapons before deletion: ',this.formData.excludedWeapons);
+			this.formData.excludedWeapons = [];
 		}
 	}
 })

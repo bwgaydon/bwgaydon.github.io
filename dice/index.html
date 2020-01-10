@@ -64,7 +64,7 @@
 					<input type="checkbox" class="weapon-tag-input" v-bind:id="'tag-' + weapon.weaponName" v-bind:value="weapon.weaponName" v-model="formData.excludedWeapons"/>
 					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag">{{weapon.weaponName}}</label>
 				</div>
-				<button class="clear-exclude" v-on:click="formData.excludedWeapons = []">Clear</button>
+				<button class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
 			</fieldset>
 
 			<button type="button" id="sidebar-submit-button" v-on:click="randomizeWeapons(formData.weaponCount)">Randomize</button>
