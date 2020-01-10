@@ -18,7 +18,7 @@ new Vue({
 		randomizeWeapons: function(weaponCount) {
 			// console.log('weaponCount: ',weaponCount);
 			// console.log('weaponData: ',weaponData);
-			console.log('weaponTypes: ',weaponTypes);
+			console.log('weaponTypes: ',formData.weaponTypes);
 			var weaponsArray = [];
 			for(var i=0;i<weaponCount;i++) {
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
