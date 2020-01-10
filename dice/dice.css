@@ -2,7 +2,7 @@
 	display:grid;
 	width:100vw;
 	height:100vh;
-	grid-template-columns: 200px auto;
+	grid-template-columns: 300px auto;
 	grid-template-rows: 100px auto;
 	font-family:Rubik,Arial,sans-serif;
 	font-weight:400;
@@ -17,31 +17,56 @@
 }
 
 #app #header #header-img {
+	display:inline-block;
 	height:80px;
 	width:auto;
 }
 
 #app #header #header-title {
+	display:inline-block;
 	font-size:48px;
 	font-weight:700;
 }
 
 #app #sidebar {
-	background-color:#ececec;
+	background-color:#000000;
 	grid-column:1;
 	grid-row:2 / 3;
-	/*grid-area:sidebar;*/
+	text-align:center;
+	overflow:auto;
 }
 
-#app #sidebar li {
-	list-style:none;
+#app #sidebar .sidebar-block {
+	display:block;
+	width:100%;
+	height:auto;
+	margin: 8px 8px 0 8px;
+	padding:16px;
+	background-color:#ececec;
+	border-radius:5px;
 }
 
-#app #sidebar li a {
-	text-decoration:none;
+#app #sidebar .sidebar-block fieldset {
+	display:block;
+	width:100%;
+}
+
+#app #sidebar .sidebar-block fieldset input[type="radio"] {
+	display:none;
+}
+
+#app #sidebar .sidebar-block fieldset input[type="radio"] + label {
+	display:inline-block;
+	text-align:center;
+	width:40px;
+	height:40px;
+	border-radius:5px;
+	border:none;
+	font-weight:500px;
 }
 
 #app #main {
 	grid-column:2 / 3;
 	grid-row:2 / 3;
+	text-align:center;
 }
