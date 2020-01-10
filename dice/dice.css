@@ -161,6 +161,12 @@ body {
 	opacity:0.5;
 }
 
+#app #sidebar .sidebar-block .clear-exclude {
+	background-color:#d0d0d0;
+	border-radius:3px;
+	margin-top:8px;
+}
+
 #app #sidebar .sidebar-block .weapon-tag-input:checked + .weapon-tag {
 	opacity:1;
 }
