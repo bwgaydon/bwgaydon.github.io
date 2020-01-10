@@ -49,16 +49,16 @@
 			<fieldset class="sidebar-block">
 				<legend class="sidebar-header">Weapon Types:</legend>
 
-				<input id="include-melee" class="include-checkbox" type="checkbox" value="melee" v-model="formData.weaponTypes" v-on:click="toggleWeaponType($event,'melee')"/>
+				<input id="include-melee" class="include-checkbox" type="checkbox" value="melee" v-model="formData.weaponTypes" v-on:click="updateWeaponTypes($event,'melee')"/>
 				<label for="include-melee" class="include-type-label">Melee</label>
 
-				<input id="include-ranged" class="include-checkbox" type="checkbox" value="ranged" v-model="formData.weaponTypes" v-on:click="toggleWeaponType($event,'ranged')"/>
+				<input id="include-ranged" class="include-checkbox" type="checkbox" value="ranged" v-model="formData.weaponTypes" v-on:click="updateWeaponTypes($event,'ranged')"/>
 				<label for="include-ranged" class="include-type-label">Ranged</label>
 
-				<input id="include-traps" class="include-checkbox" type="checkbox" value="traps" v-model="formData.weaponTypes" v-on:click="toggleWeaponType($event,'traps')"/>
+				<input id="include-traps" class="include-checkbox" type="checkbox" value="traps" v-model="formData.weaponTypes" v-on:click="updateWeaponTypes($event,'traps')"/>
 				<label for="include-traps" class="include-type-label">Traps</label>
 
-				<input id="include-shields" class="include-checkbox" type="checkbox" value="shields" v-model="formData.weaponTypes" v-on:click="toggleWeaponType($event,'shields')"/>
+				<input id="include-shields" class="include-checkbox" type="checkbox" value="shields" v-model="formData.weaponTypes" v-on:click="updateWeaponTypes($event,'shields')"/>
 				<label for="include-shields" class="include-type-label">Shields</label>
 
 			</fieldset>
