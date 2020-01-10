@@ -20,6 +20,7 @@ new Vue({
 				weaponsArray.push(weaponData[Math.floor(Math.random() * weaponData.length)]);
 			}
 			console.log('randomizeWeapons: ',weaponsArray);
+			this.chosenWeapons = weaponsArray;
 		}
 	}
 }
