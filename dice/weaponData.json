@@ -49,8 +49,8 @@ var weaponData = [
   },
   {
     "weaponName": "Battle Axe",
-    "weaponCost": 0,
-    "weaponHands": 0,
+    "weaponCost": 200,
+    "weaponHands": 2,
     "weaponType": "melee"
   },
   {

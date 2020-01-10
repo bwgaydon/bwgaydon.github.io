@@ -19,11 +19,13 @@ new Vue({
 			var weaponsArray = [];
 			for(var i=0;i<weaponCount;i++) {
 				var candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
-				/*
-				while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType)) {
-					candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
+				
+				if(this.formData.weaponTypes.length > 0) {
+					while(!this.formData.weaponTypes.includes(candidateWeapon.weaponType)) {
+						candidateWeapon = weaponData[Math.floor(Math.random() * weaponData.length)];
+					}
 				}
-				*/
+				
 				weaponsArray.push(candidateWeapon);
 			}
 			console.log('randomizeWeapons: ',weaponsArray);
