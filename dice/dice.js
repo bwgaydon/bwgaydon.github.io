@@ -52,14 +52,31 @@ new Vue({
 			}
 		},
 		//UNDER DEVELOPMENT
-		removeWeaponType: function(category) {
-			weaponData.forEach(function(element,index) {
-				if(element.weaponType == category) {
-					if(this.formData.excludedWeapons.includes(element.weaponName)) {
-						this.formData.excludedWeapons.splice(index,1);
+		includeWeaponType: function(type) {
+			for(var i=0;i<this.formData.excludedWeapons.length;i++) {
+				if(this.formData.excludedWeapons[i].weaponType == type) {
+					this.formData.excludedWeapons.splice(i,1);
+				}
+			}
+		},
+		excludeWeaponType: function(type) {
+			for(var i=0;i<weaponData.length;i++) {
+				if(weaponData[i].weaponType == type) {
+					if(!this.formData.excludedWeapons.includes(weaponData[i].weaponName)) {
+						this.formData.excludedWeapons.push(weaponData[i].weaponName);
 					}
 				}
-			})
+			}
+		},
+		toggleWeaponType: function(e,type) {
+			console.log(e);
+			/*
+			if(bool) {
+				includeWeaponType(type);
+			} else {
+				excludeWeaponType(type);
+			}
+			*/
 		}
 	}
 })
