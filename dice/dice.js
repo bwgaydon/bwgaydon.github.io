@@ -51,7 +51,7 @@ new Vue({
 				}
 			}
 		},
-		//UNDER DEVELOPMENT
+		//IN DEVELOPMENT
 		includeWeaponType: function(type) {
 			for(var i=0;i<this.formData.excludedWeapons.length;i++) {
 				if(this.formData.excludedWeapons[i].weaponType == type) {
@@ -69,11 +69,11 @@ new Vue({
 			}
 		},
 		toggleWeaponType: function(e,type) {
-			if(e.target.checked) {
-				this.includeWeaponType(type);
-			} else {
-				this.excludeWeaponType(type);
-			}
+			// if(e.target.checked) {
+			// 	this.includeWeaponType(type);
+			// } else {
+			// 	this.excludeWeaponType(type);
+			// }
 		}
 	}
 })
