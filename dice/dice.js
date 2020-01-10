@@ -23,10 +23,10 @@ new Vue({
 			console.log('list of excluded weapons: ',this.formData.excludedWeapons);
 			var weaponsArray = [];
 
-			if(this.weaponTypes.length === 0) {
-				alert('Not enough weapons');
-			} else if(weaponData.length - this.formData.excludedWeapons.length < this.formData.weaponCount) {
+			if(this.formData.weaponTypes.length === 0) {
 				alert('Please select at least one weapon type');
+			} else if(weaponData.length - this.formData.excludedWeapons.length < this.formData.weaponCount) {
+				alert('Not enough weapons');
 			} else {
 				var weaponCount = this.formData.weaponCount;
 				for(var i=0;i<weaponCount;i++) {
