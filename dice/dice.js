@@ -8,7 +8,7 @@ new Vue({
 	  weaponData: weaponData,
 	  formData: {
 	  	weaponCount:1,
-	  	weaponTypes:[],
+	  	weaponTypes:["melee","ranged","traps","shields"],
 	  	minWeaponCost:[],
 	  	maxWeaponCost:[],
 	  	excludedWeapons:[]
