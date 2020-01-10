@@ -9,8 +9,8 @@ new Vue({
 	  formData: {
 	  	weaponCount:1,
 	  	weaponTypes:[]
-	  }
-	  chosenWeapons:{}
+	  },
+	  chosenWeapons:[]
 	},
 	methods: {
 		randomWeapon: function(weaponCount) {
