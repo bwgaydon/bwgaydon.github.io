@@ -148,19 +148,23 @@ body {
 #app #main {
 	grid-column:2 / 3;
 	grid-row:2 / 3;
+	display:grid;
 	text-align:center;
 	padding:100px 0 0 0;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	justify-content:space-evenly;
+	align-content:space-evenly;
 }
 
 #app #main .weapon-item {
 	display:inline-block;
 	width:256px;
 	height:256px;
-	margin-right:16px;
-	margin-bottom:16px;
 	background-color:#f0f0f0;
 	border-radius:5px;
 	text-align:center;
+	vertical-align:top;
 }
 
 #app #main .weapon-item:nth-child(1) {
