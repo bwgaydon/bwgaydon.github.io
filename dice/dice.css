@@ -5,7 +5,9 @@ orange: #f19a4b;
 darkorange: #c66c41;
 red: 	#a83838;
 darkred: #831f1f;
-*/body {
+*/
+
+body {
 	margin:0;
 }
 
@@ -72,6 +74,8 @@ darkred: #831f1f;
 #app #sidebar .sidebar-block fieldset {
 	display:block;
 	width:100%;
+	border:none;
+	padding:0;
 }
 
 #app #sidebar .sidebar-block fieldset input[type="radio"] {
