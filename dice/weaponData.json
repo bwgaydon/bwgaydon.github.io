@@ -49,7 +49,7 @@ var weaponData = [
   },
   {
     "weaponName": "Heavy Handaxe",
-    "weaponCost": 200,
+    "weaponCost": 140,
     "weaponHands": 1,
     "weaponType": "melee"
   },
@@ -73,7 +73,7 @@ var weaponData = [
   },
   {
     "weaponName": "Scythe",
-    "weaponCost": 95,
+    "weaponCost": 90,
     "weaponHands": 2,
     "weaponType": "melee"
   },
@@ -116,12 +116,6 @@ var weaponData = [
   {
     "weaponName": "Mace",
     "weaponCost": 50,
-    "weaponHands": 1,
-    "weaponType": "melee"
-  },
-  {
-    "weaponName": "Short Spear",
-    "weaponCost": 150,
     "weaponHands": 1,
     "weaponType": "melee"
   },
@@ -177,12 +171,6 @@ var weaponData = [
     "weaponName": "Blacksmith Hammer",
     "weaponCost": 30,
     "weaponHands": 1,
-    "weaponType": "melee"
-  },
-  {
-    "weaponName": "Quarterstaff",
-    "weaponCost": 0,
-    "weaponHands": 0,
     "weaponType": "melee"
   },
   {

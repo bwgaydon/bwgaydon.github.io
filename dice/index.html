@@ -59,12 +59,15 @@
 			</fieldset>
 
 			<fieldset class="sidebar-block">
-				<legend class="sidebar-header">Exclude?</legend>
+				<legend class="sidebar-header">Available Weapons</legend>
 				<div class="weapon-tag-wrapper" v-for="weapon in weaponData">
 					<input type="checkbox" class="weapon-tag-input" v-bind:id="'tag-' + weapon.weaponName" v-bind:value="weapon.weaponName" v-model="formData.excludedWeapons"/>
 					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag">{{weapon.weaponName}}</label>
 				</div>
-				<button class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
+				<div class="exclude-button-block">
+					<button class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
+					<button class="exclude-all" v-on:click="excludeAllWeapons">Exclude All</button>
+				</div>
 			</fieldset>
 
 			<button type="button" id="sidebar-submit-button" v-on:click="randomizeWeapons(formData.weaponCount)">Randomize</button>

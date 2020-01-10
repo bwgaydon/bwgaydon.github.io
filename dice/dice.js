@@ -36,8 +36,20 @@ new Vue({
 			this.chosenWeapons = weaponsArray;
 		},
 		clearExcludedWeapons: function() {
-			
-			this.formData.excludedWeapons = []
+			this.formData.excludedWeapons = [];
+		},
+		excludeAllWeapons: function() {
+			this.formData.excludedWeapons = weaponData;
+		},
+		//UNDER DEVELOPMENT
+		removeWeaponType: function(category) {
+			weaponData.forEach(function(element,index) {
+				if(element.weaponType == category) {
+					if(this.formData.excludedWeapons.includes(element.weaponName)) {
+						this.formData.excludedWeapons.splice(index,1);
+					}
+				}
+			})
 		}
 	}
 })

@@ -161,11 +161,19 @@ body {
 	opacity:1;
 }
 
+#app #sidebar .sidebar-block .exclude-button-block {
+	display:flex;
+	width:100%;
+	height:auto;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	padding:8px 32px;
+}
+
 #app #sidebar .sidebar-block .clear-exclude {
 	background-color:#d0d0d0;
 	border-radius:3px;
-	display: block;
-    margin: 8px auto;
+	display: inline-block;
 }
 
 #app #sidebar .sidebar-block .weapon-tag-input:checked + .weapon-tag {
