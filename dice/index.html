@@ -45,14 +45,12 @@
 						<label for="include-shields" class="include-type-label">Shields</label>
 					</fieldset>
 				</div>
-				<!--
-				<button type="submit" for="weapon-options-form" id="sidebar-submit-button">Randomize Loadout</button>
-				-->
+				<button type="button" id="sidebar-submit-button" v-on:click="chosenWeapons = randomWeapon">Randomize Loadout</button>
 			</form>
 		</div>
 
 		<div id="main">
-			<div class="weapon-item" v-for="(weapon, index) in formData.weaponCount">
+			<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="(weapon, index) in formData.weaponCount">
 				{{weapon}}
 			</div>
 		</div>

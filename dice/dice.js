@@ -7,7 +7,7 @@ new Vue({
 	  },
 	  weaponData: weaponData,
 	  formData: {
-	  	weaponCount:0,
+	  	weaponCount:1,
 	  	weaponTypes:[]
 	  }
 	  chosenWeapons:{}
