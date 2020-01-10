@@ -10,9 +10,9 @@ new Vue({
 	  	weaponCount:1,
 	  	weaponTypes:[],
 	  	minWeaponCost:[],
-	  	maxWeaponCost:[]
+	  	maxWeaponCost:[],
+	  	excludedWeapons:[]
 	  },
-	  excludedWeapons:[],
 	  chosenWeapons:[]
 	},
 	methods: {
