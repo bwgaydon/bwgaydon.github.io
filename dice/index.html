@@ -65,7 +65,7 @@
 			<div class="sidebar-block">
 				<fieldset>
 					<legend class="sidebar-header">Exclude?</legend>
-					<div class="weapon-tag-wrapper">
+					<div class="weapon-tag-wrapper" v-for="weapon in weaponData">
 						<input type="checkbox" class="weapon-tag-input" v-bind:value="weapon.weaponName" v-model="formData.exludedWeapons"/>
 						<label class="weapon-tag">{{weapon.weaponName}}</label>
 					</div>
