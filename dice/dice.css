@@ -147,12 +147,24 @@ body {
 	width:0;
 }
 
+#app #sidebar .sidebar-block .weapon-tag-wrapper {
+	display:inline-block;
+}
+
 #app #sidebar .sidebar-block .weapon-tag {
+	display:inline-block;
 	padding:2px;
 	border-radius:3px;
 	background-color:#fecd21;
 	font-size:16px;
 	font-weight:500;
+	margin:0 4px 4px 0;
+	cursor:pointer;
+	opacity:0.5;
+}
+
+#app #sidebar .sidebar-block .weapon-tag-input:checked + .weapon-tag {
+	opacity:1;
 }
 
 #app #sidebar .sidebar-block .weapon-tag:nth-child(n+12) {
