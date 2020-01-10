@@ -64,24 +64,27 @@
 
 			<div class="sidebar-block">
 				<fieldset>
-					<legend class="sidebar-header">Exclude?
-						<input type="checkbox" class="weapon-tag-input" v-for="weapon in weaponData" v-bind:value="weapon.weaponName" v-model="formData.exludedWeapons"/>
+					<legend class="sidebar-header">Exclude?</legend>
+					<div class="weapon-tag-wrapper">
+						<input type="checkbox" class="weapon-tag-input" v-bind:value="weapon.weaponName" v-model="formData.exludedWeapons"/>
 						<label class="weapon-tag">{{weapon.weaponName}}</label>
 					</div>
-					
-					<button type="button" id="sidebar-submit-button" v-on:click="randomizeWeapons(formData.weaponCount)">Randomize</button>
-				</form>
+				</fieldset>
 			</div>
 
-			<div id="main">
-				<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="weapon in chosenWeapons">
-					<h3 class="weapon-name">{{weapon.weaponName}}</h3>
-					<p class="weapon-cost">{{weapon.weaponCost}} moneys</p>
-				</div>
-			</div>
+			<button type="button" id="sidebar-submit-button" v-on:click="randomizeWeapons(formData.weaponCount)">Randomize</button>
+		</form>
+	</div>
 
+	<div id="main">
+		<div class="weapon-item" v-if="chosenWeapons.length > 0" v-for="weapon in chosenWeapons">
+			<h3 class="weapon-name">{{weapon.weaponName}}</h3>
+			<p class="weapon-cost">{{weapon.weaponCost}} moneys</p>
 		</div>
+	</div>
 
-		<script src="dice.js"></script>
-		
-	</body>
+</div>
+
+<script src="dice.js"></script>
+
+</body>
