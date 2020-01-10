@@ -38,21 +38,23 @@
 					v-for="(weapon,index) in weaponCount">
 						<fieldset>
 							<legend>Weapon {{index}}</legend>
-							<label v-bind:for="'weapon-cost-' + index">Weapon {{index}}
-							<input type="range" min="1" max="100" value="50" class="cost-slider" v-bind:id="'weapon-cost-' + index">
+							<label v-bind:for="'weapon-cost-' + index">Min Weapon Cost
+							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-cost-' + index" v-model="formData.minWeaponCost[index]">
+							<label v-bind:for="'weapon-cost-' + index">Max Weapon Cost
+							<input type="range" min="1" max="500" value="250" class="cost-slider" v-bind:id="'weapon-cost-' + index" v-model="formData.maxWeaponCost[index]">
 					</div>
 				</div>
 
 				<div class="sidebar-block">
 					<fieldset>
 						<legend class="include-header">Weapon Types:</legend>
-						<input id="include-melee" class="include-checkbox" type="checkbox" value="melee" v-model="formData.weaponsTypes"/>
+						<input id="include-melee" class="include-checkbox" type="checkbox" value="melee" v-model="formData.weaponTypes"/>
 						<label for="include-melee" class="include-type-label">Melee</label>
-						<input id="include-ranged" class="include-checkbox" type="checkbox" value="ranged" v-model="formData.weaponsTypes"/>
+						<input id="include-ranged" class="include-checkbox" type="checkbox" value="ranged" v-model="formData.weaponTypes"/>
 						<label for="include-ranged" class="include-type-label">Ranged</label>
-						<input id="include-traps" class="include-checkbox" type="checkbox" value="trap" v-model="formData.weaponsTypes"/>
+						<input id="include-traps" class="include-checkbox" type="checkbox" value="trap" v-model="formData.weaponTypes"/>
 						<label for="include-traps" class="include-type-label">Traps</label>
-						<input id="include-shields" class="include-checkbox" type="checkbox" value="shield" v-model="formData.weaponsTypes"/>
+						<input id="include-shields" class="include-checkbox" type="checkbox" value="shield" v-model="formData.weaponTypes"/>
 						<label for="include-shields" class="include-type-label">Shields</label>
 					</fieldset>
 				</div>
