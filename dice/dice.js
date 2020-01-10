@@ -10,5 +10,14 @@ new Vue({
 	  	weaponCount:0,
 	  	weaponTypes:[]
 	  }
-	}
+	  chosenWeapons:{}
+	},
+	methods: {
+		randomWeapon: function(weaponCount) {
+			console.log('randomWeapon: ',weaponData[Math.floor(Math.random() * weaponData.length)]);
+			return weaponData[Math.floor(Math.random() * weaponData.length)];
+		}
 })
+
+
+}

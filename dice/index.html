@@ -45,13 +45,15 @@
 						<label for="include-shields" class="include-type-label">Shields</label>
 					</fieldset>
 				</div>
+				<!--
 				<button type="submit" for="weapon-options-form" id="sidebar-submit-button">Randomize Loadout</button>
+				-->
 			</form>
 		</div>
 
 		<div id="main">
-			<div>
-				{{formData.weaponCount}}
+			<div class="weapon-item" v-for="(weapon, index) in formData.weaponCount">
+				{{weapon}}
 			</div>
 		</div>
 
