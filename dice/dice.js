@@ -45,7 +45,11 @@ new Vue({
 			this.formData.excludedWeapons = [];
 		},
 		excludeAllWeapons: function() {
-			this.formData.excludedWeapons = weaponData;
+			weaponData.forEach(function(element) {
+				if(!this.formData.excludedWeapons.includes(element.weaponName)) {
+					this.formData.excludedWeapons.push(element.weaponName);
+				}
+			})
 		},
 		//UNDER DEVELOPMENT
 		removeWeaponType: function(category) {
