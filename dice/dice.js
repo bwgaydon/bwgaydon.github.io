@@ -8,7 +8,7 @@ new Vue({
 	  weaponData: weaponData,
 	  formData: {
 	  	weaponCount:1,
-	  	weaponTypes:["melee","ranged","traps","shields"],
+	  	weaponTypes:["melee","ranged","trap","shield"],
 	  	minWeaponCost:[],
 	  	maxWeaponCost:[],
 	  	excludedWeapons:[]
@@ -77,7 +77,7 @@ new Vue({
 		},
 
 		updateWeaponTypes: function(event,type) {
-			var weaponTypeArray = ["melee","ranged","traps","shields"];
+			var weaponTypeArray = ["melee","ranged","trap","shield"];
 			for(var i=0;i<weaponTypeArray.length;i++) {
 				if(!this.formData.weaponTypes.includes(weaponTypeArray[i])) {
 					this.includeWeaponType(weaponTypeArray[i]);
