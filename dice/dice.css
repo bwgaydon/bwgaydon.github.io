@@ -89,13 +89,15 @@ body {
     width: 100%;
 }
 
-#app #sidebar .sidebar-block input[type="radio"] {
+#app #sidebar .sidebar-block input[type="radio"],
+#app #sidebar .sidebar-block input[type="checkbox"] {
 	opacity:0;
 	position:absolute;
 	width:0;
 }
 
-#app #sidebar .sidebar-block  input[type="radio"] + label {
+#app #sidebar .sidebar-block  input[type="radio"] + label,
+#app #sidebar .sidebar-block  input[type="checkbox"] + label, {
 	display:inline-block;
 	text-align:center;
 	width:40px;
