@@ -77,6 +77,8 @@ new Vue({
 		},
 
 		updateWeaponTypes: function(event,type) {
+			console.log('in updateWeaponTypes, event = ',event);
+			console.log('in updateWeaponTypes, type = ',type);
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			weaponTypeArray.forEach((type) => {
 				if(!this.weaponTypes.includes(type)) {
