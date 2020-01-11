@@ -12,6 +12,7 @@
 	<div id="app">
 
 		<div id="header">
+			<i class="header-icon fa fa-fort-awesome-alt"></i>
 			<h1 id="header-title">{{header.title}}</h1>
 		</div>
 
@@ -67,7 +68,7 @@
 				<legend class="sidebar-header">Available Weapons</legend>
 				<div class="weapon-tag-wrapper" v-for="weapon in weaponData">
 					<input type="checkbox" class="weapon-tag-input" v-bind:id="'tag-' + weapon.weaponName" v-bind:value="weapon.weaponName" v-model="formData.excludedWeapons"/>
-					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag">{{weapon.weaponName}}</label>
+					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag" v-on:click="updateCheckboxes($event,weapon)">{{weapon.weaponName}}</label>
 				</div>
 				<div class="exclude-button-block">
 					<button type="button" class="clear-exclude" v-on:click="clearExcludedWeapons">Clear</button>
