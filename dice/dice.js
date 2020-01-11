@@ -82,9 +82,9 @@ new Vue({
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			for(var i=0;i<weaponTypeArray.length;i++) {
 				if(!this.formData.weaponTypes.includes(weaponTypeArray[i])) {
-					excludeWeaponType(weaponTypeArray[i]);
+					this.excludeWeaponType(weaponTypeArray[i]);
 				} else {
-					includeWeaponType(weaponTypeArray[i]);
+					this.includeWeaponType(weaponTypeArray[i]);
 				}
 			}
 		},
