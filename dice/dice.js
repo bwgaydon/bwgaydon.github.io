@@ -77,8 +77,6 @@ new Vue({
 		},
 
 		updateWeaponTypes: function(event,type) {
-			console.log('in updateWeaponTypes, event = ',event);
-			console.log('in updateWeaponTypes, type = ',type);
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			for(var i=0;i<weaponTypeArray.length;i++) {
 				if(event.target.checked === false) {
@@ -90,9 +88,7 @@ new Vue({
 		},
 
 		updateCheckboxes: function(event,weapon) {
-			console.log('in updateCheckboxes, event = ',event);
-			console.log('in updateCheckboxes, weapon = ',weapon);
-			if(event.target.checked) {
+			if(event.target.control.checked) {
 				if(!this.formData.weaponTypes.includes(weapon.weaponName)) {
 					this.formData.weaponTypes.push(weapon.weaponName);
 				}
