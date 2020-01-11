@@ -45,7 +45,7 @@ new Vue({
 		},
 
 		findWeaponByName: function(name) {
-			for (weapon in weaponsData) {
+			for (weapon in weaponData) {
 				if(weapon.weaponName == name) {
 					return weapon;
 				}
