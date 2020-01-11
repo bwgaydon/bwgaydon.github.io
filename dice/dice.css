@@ -96,8 +96,7 @@ body {
 	width:0;
 }
 
-#app #sidebar .sidebar-block  input[type="radio"] + label,
-#app #sidebar .sidebar-block.weapon-type-block  input[type="checkbox"] + label {
+#app #sidebar .sidebar-block  input[type="radio"] + label {
 	display:inline-block;
 	text-align:center;
 	width:40px;
@@ -122,28 +121,41 @@ body {
 }
 
 #app #sidebar .sidebar-block  input[type="radio"] + label:nth-of-type(1),
-#app #sidebar .sidebar-block  input[type="checkbox"] + label:nth-of-type(1) {
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label:nth-of-type(1) {
 	background-color:#fecd21;
 }
 #app #sidebar .sidebar-block  input[type="radio"] + label:nth-of-type(2),
-#app #sidebar .sidebar-block  input[type="checkbox"] + label:nth-of-type(2) {
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label:nth-of-type(2) {
 	background-color:#f19a4b;
 }
 #app #sidebar .sidebar-block  input[type="radio"] + label:nth-of-type(3),
-#app #sidebar .sidebar-block  input[type="checkbox"] + label:nth-of-type(3) {
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label:nth-of-type(3) {
 	background-color:#c66c41;
 }
 #app #sidebar .sidebar-block  input[type="radio"] + label:nth-of-type(4),
-#app #sidebar .sidebar-block  input[type="checkbox"] + label:nth-of-type(4) {
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label:nth-of-type(4) {
 	background-color:#a83838;
 }
 #app #sidebar .sidebar-block  input[type="radio"] + label:nth-of-type(5),
-#app #sidebar .sidebar-block  input[type="checkbox"] + label:nth-of-type(5) {
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label:nth-of-type(5) {
 	background-color:#831f1f;
 }
 
 #app #sidebar .sidebar-block  input[type="radio"] + label:not(:last-child) {
 	margin-right:20px;
+}
+
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"] + label {
+	display:inline-block;
+	width:auto;
+	height:40px;
+	line-height:40px;
+	border-radius:5px;
+	border:none;
+	font-size:16px;
+	font-weight:500;
+	opacity:0.5;
+	cursor:pointer;
 }
 
 #app #sidebar .sidebar-block .weapon-tag-input {
