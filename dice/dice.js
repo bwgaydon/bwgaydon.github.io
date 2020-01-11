@@ -45,11 +45,11 @@ new Vue({
 		},
 
 		findWeaponByName: function(name) {
-			for (weapon in weaponData) {
+			weaponData.forEach(function(weapon) {
 				if(weapon.weaponName == name) {
 					return weapon;
 				}
-			}
+			})
 		},
 
 		clearExcludedWeapons: function() {
