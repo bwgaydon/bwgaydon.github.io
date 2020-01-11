@@ -50,7 +50,7 @@ new Vue({
 					return weapon;
 				}
 			}
-		}
+		},
 
 		clearExcludedWeapons: function() {
 			this.formData.excludedWeapons = []
