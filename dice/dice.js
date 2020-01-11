@@ -80,13 +80,13 @@ new Vue({
 			console.log('in updateWeaponTypes, event = ',event);
 			console.log('in updateWeaponTypes, type = ',type);
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
-			weaponTypeArray.forEach((type) => {
-				if(!this.weaponTypes.includes(type)) {
-					excludeWeaponType(type);
+			for(var i=0;i<weaponTypeArray.length;i++) {
+				if(!this.weaponTypes.includes(weaponTypeArray[i])) {
+					excludeWeaponType(weaponTypeArray[i]);
 				} else {
-					includeWeaponType(type);
+					includeWeaponType(weaponTypeArray[i]);
 				}
-			})
+			}
 		},
 
 		updateCheckboxes: function(event,weapon) {
