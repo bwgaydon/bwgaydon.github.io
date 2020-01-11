@@ -81,7 +81,7 @@ new Vue({
 			console.log('in updateWeaponTypes, type = ',type);
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			for(var i=0;i<weaponTypeArray.length;i++) {
-				if(!this.formData.weaponTypes.includes(weaponTypeArray[i])) {
+				if(this.formData.weaponTypes.includes(weaponTypeArray[i])) {
 					this.excludeWeaponType(weaponTypeArray[i]);
 				} else {
 					this.includeWeaponType(weaponTypeArray[i]);
