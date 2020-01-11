@@ -97,7 +97,7 @@ body {
 }
 
 #app #sidebar .sidebar-block  input[type="radio"] + label,
-#app #sidebar .sidebar-block  input[type="checkbox"] + label {
+#app #sidebar .sidebar-block.weapon-type-block  input[type="checkbox"] + label {
 	display:inline-block;
 	text-align:center;
 	width:40px;
