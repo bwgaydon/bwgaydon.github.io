@@ -81,7 +81,7 @@ new Vue({
 			console.log('in updateWeaponTypes, type = ',type);
 			var weaponTypeArray = ["melee","ranged","traps","shields"];
 			for(var i=0;i<weaponTypeArray.length;i++) {
-				if(!this.weaponTypes.includes(weaponTypeArray[i])) {
+				if(!this.formData.weaponTypes.includes(weaponTypeArray[i])) {
 					excludeWeaponType(weaponTypeArray[i]);
 				} else {
 					includeWeaponType(weaponTypeArray[i]);
@@ -93,8 +93,8 @@ new Vue({
 			console.log('in updateCheckboxes, event = ',event);
 			console.log('in updateCheckboxes, weapon = ',weapon);
 			if(event.target.checked) {
-				if(!this.weaponTypes.includes(weapon.weaponName)) {
-					this.weaponTypes.push(weapon.weaponName);
+				if(!this.formData.weaponTypes.includes(weapon.weaponName)) {
+					this.formData.weaponTypes.push(weapon.weaponName);
 				}
 			}
 		}
