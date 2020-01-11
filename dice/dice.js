@@ -44,8 +44,16 @@ new Vue({
 			}
 		},
 
+		findWeaponByName: function(name) {
+			for (weapon in weapons) {
+				if(weapon.weaponName == name) {
+					return weapon;
+				}
+			}
+		}
+
 		clearExcludedWeapons: function() {
-			this.formData.excludedWeapons = [];
+			this.formData.excludedWeapons = []
 		},
 
 		excludeAllWeapons: function() {
@@ -60,7 +68,7 @@ new Vue({
 		//probably bad idea because of case where check category then do individual ones
 		includeWeaponType: function(type) {
 			for(var i=0;i<this.formData.excludedWeapons.length;i++) {
-				if(this.formData.excludedWeapons[i].weaponType == type) {
+				if(this.findWeaponByName(this.formData.excludedWeapons[i]).weaponType == type) {
 					this.formData.excludedWeapons.splice(i,1);
 				}
 			}
