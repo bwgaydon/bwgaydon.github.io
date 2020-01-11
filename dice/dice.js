@@ -76,14 +76,11 @@ new Vue({
 			}
 		},
 
-		updateWeaponTypes: function(event,type) {
-			var weaponTypeArray = ["melee","ranged","trap","shield"];
-			for(var i=0;i<weaponTypeArray.length;i++) {
-				if(!this.formData.weaponTypes.includes(weaponTypeArray[i])) {
-					this.includeWeaponType(weaponTypeArray[i]);
-				} else {
-					this.excludeWeaponType(weaponTypeArray[i]);
-				}
+		toggleWeaponType: function(event,type) {
+			if(this.formData.weaponTypes.includes(type)) {
+				this.excludeWeaponType(type);
+			} else {
+				this.includeWeaponType(type);
 			}
 		},
 
