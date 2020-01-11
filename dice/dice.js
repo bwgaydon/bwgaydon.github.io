@@ -88,6 +88,8 @@ new Vue({
 		},
 
 		updateCheckboxes: function(event,weapon) {
+			console.log('in updateCheckboxes, event = ',event);
+			console.log('in updateCheckboxes, weapon = ',weapon);
 			if(event.target.checked) {
 				if(!this.weaponTypes.includes(weapon.weaponName)) {
 					this.weaponTypes.push(weapon.weaponName);
