@@ -87,6 +87,7 @@ new Vue({
 					}
 				}
 			}
+			console.log('after excluding weapon type ',type,' this.formData.excludedWeapons = ,this.formData.excludedWeapons')
 		},
 
 		toggleWeaponType: function(event,type) {
