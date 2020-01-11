@@ -159,6 +159,10 @@ body {
 	cursor:pointer;
 }
 
+#app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"]:checked + label {
+opacity: 1;
+}
+
 #app #sidebar .sidebar-block .weapon-tag-input {
 	opacity:0;
 	position:absolute;
