@@ -66,6 +66,7 @@
 
 			<fieldset class="sidebar-block">
 				<legend class="sidebar-header">Available Weapons</legend>
+				<p>doesn't work right now :)</p>
 				<div class="weapon-tag-wrapper" v-for="weapon in weaponData">
 					<input type="checkbox" class="weapon-tag-input" v-bind:id="'tag-' + weapon.weaponName" v-bind:value="weapon.weaponName" v-model="formData.excludedWeapons"/>
 					<label v-bind:for="'tag-' + weapon.weaponName" class="weapon-tag" v-on:click="updateCheckboxes($event,weapon)">{{weapon.weaponName}}</label>
