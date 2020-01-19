@@ -69,6 +69,14 @@ new Vue({
 		//IN DEVELOPMENT
 		//probably bad idea because of case where check category then do individual ones
 		includeWeaponType: function(type) {
+
+			console.log('this.formData.excludedWeapons: ',this.formData.excludedWeapons);
+			var excludedWeapons = this.formData.excludedWeapons;
+			excludedWeapons.forEach(function(weapon,index) {
+				console.log('weapon: ',weapon);
+				console.log('this.findWeaponByName(weapon) = ',this.findWeaponByName(weapon));
+			});
+			/*
 			console.log('this.formData.excludedWeapons: ',this.formData.excludedWeapons);
 			for(var i=0;i<this.formData.excludedWeapons.length;i++) {
 				console.log('this.formData.excludedWeapons[i] = ',this.formData.excludedWeapons[i]);
@@ -77,6 +85,7 @@ new Vue({
 					this.formData.excludedWeapons.splice(i,1);
 				}
 			}
+			*/
 		},
 
 		excludeWeaponType: function(type) {
@@ -87,7 +96,7 @@ new Vue({
 					}
 				}
 			}
-			console.log('after excluding weapon type ',type,' this.formData.excludedWeapons = ,this.formData.excludedWeapons')
+			//console.log('after excluding weapon type ',type,' this.formData.excludedWeapons = ,this.formData.excludedWeapons')
 		},
 
 		toggleWeaponType: function(event,type) {
@@ -106,4 +115,4 @@ new Vue({
 			}
 		}
 	}
-})
+}) 
