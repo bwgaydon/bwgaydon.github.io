@@ -95,9 +95,9 @@ new Vue({
 		},
 
 		excludeShitWeapons: function() {
-			for(var i=0;i<shitWeapons.length;i++) {
-				if(!this.formData.excludedWeapons.includes(shitWeapons[i].weaponName)) {
-					this.formData.excludedWeapons.push(shitWeapons[i].weaponName);
+			for(var i=0;i<this.shitWeapons.length;i++) {
+				if(!this.formData.excludedWeapons.includes(this.shitWeapons[i].weaponName)) {
+					this.formData.excludedWeapons.push(this.shitWeapons[i].weaponName);
 				}
 			}
 		},
