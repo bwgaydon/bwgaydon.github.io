@@ -160,7 +160,7 @@ body {
 }
 
 #app #sidebar .sidebar-block.weapon-type-block input[type="checkbox"]:checked + label {
-opacity: 1;
+	opacity: 1;
 }
 
 #app #sidebar .sidebar-block .weapon-tag-input {
@@ -195,7 +195,8 @@ opacity: 1;
 }
 
 #app #sidebar .sidebar-block button.clear-exclude,
-#app #sidebar .sidebar-block button.exclude-all {
+#app #sidebar .sidebar-block button.exclude-all,
+#app #sidebar .sidebar-block button.exclude-shit {
 	background-color:#d0d0d0;
 	border-radius:3px;
 	display: inline-block;

@@ -11,7 +11,8 @@ new Vue({
 	  	weaponTypes:["melee","ranged","trap","shield"],
 	  	minWeaponCost:[],
 	  	maxWeaponCost:[],
-	  	excludedWeapons:[]
+	  	excludedWeapons:[],
+	  	shitWeapons:["Warhammer","Rapier","Short Sword","Rusty Fork","Dagger","Hoe","Blacksmith Hammer","Wooden Mallet"]
 	  },
 	  chosenWeapons:[]
 	},
@@ -67,10 +68,7 @@ new Vue({
 		},
 
 		includeWeaponType: function(type) {
-			console.log('this.formData.excludedWeapons: ',this.formData.excludedWeapons);
 			for(var i=this.formData.excludedWeapons.length - 1;i>=0;i--) {
-				console.log('this.formData.excludedWeapons[i] = ',this.formData.excludedWeapons[i]);
-				console.log('this.findWeaponByName(this.formData.excludedWeapons[i]) =',this.findWeaponByName(this.formData.excludedWeapons[i]));
 				if(this.findWeaponByName(this.formData.excludedWeapons[i]).weaponType == type) {
 					this.formData.excludedWeapons.splice(i,1);
 				}
@@ -93,6 +91,14 @@ new Vue({
 				this.excludeWeaponType(type);
 			} else {
 				this.includeWeaponType(type);
+			}
+		},
+
+		excludeShitWeapons: function() {
+			for(var i=0;i<shitWeapons.length;i++) {
+				if(!this.formData.excludedWeapons.includes(shitWeapons[i].weaponName)) {
+					this.formData.excludedWeapons.push(shitWeapons[i].weaponName);
+				}
 			}
 		},
 
