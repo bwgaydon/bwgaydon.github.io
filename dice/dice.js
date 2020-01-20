@@ -70,7 +70,7 @@ new Vue({
 		//probably bad idea because of case where check category then do individual ones
 		includeWeaponType: function(type) {
 			console.log('this.formData.excludedWeapons: ',this.formData.excludedWeapons);
-			for(var i=this.formData.excludedWeapons.length - 1;i>=0;i++) {
+			for(var i=this.formData.excludedWeapons.length - 1;i>=0;i--) {
 				console.log('this.formData.excludedWeapons[i] = ',this.formData.excludedWeapons[i]);
 				console.log('this.findWeaponByName(this.formData.excludedWeapons[i]) =',this.findWeaponByName(this.formData.excludedWeapons[i]));
 				if(this.findWeaponByName(this.formData.excludedWeapons[i]).weaponType == type) {
