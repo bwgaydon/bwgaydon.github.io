@@ -6,13 +6,13 @@ new Vue({
 	    image: "images/meow.png"
 	  },
 	  weaponData: weaponData,
+	  shitWeapons:["Warhammer","Rapier","Short Sword","Rusty Fork","Dagger","Hoe","Blacksmith Hammer","Wooden Mallet"],
 	  formData: {
 	  	weaponCount:1,
 	  	weaponTypes:["melee","ranged","trap","shield"],
 	  	minWeaponCost:[],
 	  	maxWeaponCost:[],
-	  	excludedWeapons:[],
-	  	shitWeapons:["Warhammer","Rapier","Short Sword","Rusty Fork","Dagger","Hoe","Blacksmith Hammer","Wooden Mallet"]
+	  	excludedWeapons:[]
 	  },
 	  chosenWeapons:[]
 	},
