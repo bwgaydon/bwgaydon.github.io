@@ -193,7 +193,7 @@ body {
 	align-items:flex-start;
 	align-content: space-evenly;
 	padding:8px;
-	margin-top:12px;
+	margin-top:8px;
 }
 
 #app #sidebar .sidebar-block .exclude-button:not(:last-child) {
