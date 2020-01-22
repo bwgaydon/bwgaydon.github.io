@@ -190,13 +190,19 @@ body {
 	width:100%;
 	height:auto;
 	justify-content: space-evenly;
+	align-items:flex-start;
 	align-content: space-evenly;
-	padding:8px 32px;
+	padding:8px;
+	margin-top:12px;
 }
 
-#app #sidebar .sidebar-block button.clear-exclude,
-#app #sidebar .sidebar-block button.exclude-all,
-#app #sidebar .sidebar-block button.exclude-shit {
+#app #sidebar .sidebar-block .exclude-button:not(:last-child) {
+	margin-right:4px;
+}
+
+#app #sidebar .sidebar-block .exclude-button.clear-exclude,
+#app #sidebar .sidebar-block .exclude-button.exclude-all,
+#app #sidebar .sidebar-block .exclude-button.exclude-shit {
 	background-color:#d0d0d0;
 	border-radius:3px;
 	display: inline-block;
